@@ -1,0 +1,74 @@
+﻿backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "uploads"
+public_folder: "/uploads"
+
+collections:
+  - name: "settings"
+    label: "Website Settings"
+    files:
+      - label: "Main Website Info"
+        name: "site"
+        file: "content/site.json"
+        format: "json"
+        fields:
+          - { label: "Complex Name", name: "name", widget: "string" }
+          - { label: "Tagline", name: "tagline", widget: "string", required: false }
+          - { label: "Logo", name: "logo", widget: "image", required: false }
+          - { label: "Hero Title", name: "heroTitle", widget: "string" }
+          - { label: "Hero Text", name: "heroText", widget: "text" }
+          - { label: "Hero Image", name: "heroImage", widget: "image", required: false }
+          - { label: "Park Information", name: "parkInfo", widget: "text" }
+          - { label: "Address", name: "address", widget: "string", required: false }
+          - { label: "Phone", name: "phone", widget: "string", required: false }
+          - { label: "Email", name: "email", widget: "string", required: false }
+          - { label: "Hours", name: "hours", widget: "string", required: false }
+          - { label: "Stat 1", name: "stat1", widget: "string", required: false }
+          - { label: "Stat 1 Label", name: "stat1Label", widget: "string", required: false }
+          - { label: "Stat 2", name: "stat2", widget: "string", required: false }
+          - { label: "Stat 2 Label", name: "stat2Label", widget: "string", required: false }
+          - { label: "Stat 3", name: "stat3", widget: "string", required: false }
+          - { label: "Stat 3 Label", name: "stat3Label", widget: "string", required: false }
+      - label: "Schedule / Events"
+        name: "events"
+        file: "content/events.json"
+        format: "json"
+        fields:
+          - label: "Events"
+            name: "events"
+            widget: "list"
+            summary: "{{fields.title}} — {{fields.date}}"
+            fields:
+              - { label: "Event Title", name: "title", widget: "string" }
+              - { label: "Date / Time", name: "date", widget: "string" }
+              - { label: "Price", name: "price", widget: "string", required: false }
+              - { label: "Registration Link", name: "register", widget: "string", required: false }
+              - { label: "Event Picture", name: "image", widget: "image", required: false }
+              - { label: "Event Logo", name: "logo", widget: "image", required: false }
+              - { label: "Description", name: "description", widget: "text", required: false }
+      - label: "Media"
+        name: "media"
+        file: "content/media.json"
+        format: "json"
+        fields:
+          - label: "Media Items"
+            name: "media"
+            widget: "list"
+            summary: "{{fields.title}}"
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Image", name: "image", widget: "image", required: false }
+              - { label: "Caption", name: "caption", widget: "text", required: false }
+      - label: "Rules"
+        name: "rules"
+        file: "content/rules.json"
+        format: "json"
+        fields:
+          - label: "Rules"
+            name: "rules"
+            widget: "list"
+            summary: "{{fields.rule}}"
+            fields:
+              - { label: "Rule", name: "rule", widget: "string" }

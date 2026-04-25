@@ -1,0 +1,19 @@
+﻿{
+  "name": "Summit Sports Complex",
+  "tagline": "Tournaments • Leagues • Training • Events",
+  "heroTitle": "Your Home for Sports, Events, and Community",
+  "heroText": "View upcoming events, registration info, park rules, field updates, media, and everything happening at our sports complex.",
+  "heroImage": "https://images.unsplash.com/photo-1526232761682-d26e03ac148e?auto=format&fit=crop&w=1400&q=80",
+  "logo": "",
+  "parkInfo": "Our sports complex hosts tournaments, leagues, training sessions, rentals, and community events. Check the schedule before arriving for event details, prices, registration, and weather-related updates.",
+  "address": "123 Sports Complex Drive, Your Town, NJ",
+  "phone": "(555) 123-4567",
+  "email": "info@yoursportscomplex.com",
+  "hours": "Mon–Sun: 8:00 AM – 10:00 PM",
+  "stat1": "8+",
+  "stat1Label": "Fields / Courts",
+  "stat2": "50+",
+  "stat2Label": "Events Yearly",
+  "stat3": "All Ages",
+  "stat3Label": "Welcome"
+}
