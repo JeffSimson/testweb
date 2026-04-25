@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
@@ -7,26 +7,558 @@
   <meta name="description" content="Sports complex website with schedule, media, rules, and park information." />
   <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
   <style>
-    :root{--bg:#07111f;--card:#0f1d31;--text:#f5f7fb;--muted:#b7c3d7;--line:rgba(255,255,255,.13);--accent:#31c48d;--accent2:#4da3ff;--radius:18px;--shadow:0 18px 50px rgba(0,0,0,.28);--max:1180px;font-family:Inter,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(circle at top left,rgba(77,163,255,.28),transparent 35%),radial-gradient(circle at 85% 15%,rgba(49,196,141,.18),transparent 32%),var(--bg);color:var(--text)}a{color:inherit;text-decoration:none}img{max-width:100%;display:block}.wrap{width:min(var(--max),calc(100% - 32px));margin:0 auto}.nav{position:sticky;top:0;z-index:20;backdrop-filter:blur(14px);background:rgba(7,17,31,.78);border-bottom:1px solid var(--line)}.nav-inner{min-height:76px;display:flex;justify-content:space-between;align-items:center;gap:18px}.brand{display:flex;align-items:center;gap:12px;font-weight:900;letter-spacing:.2px}.brand-logo{width:44px;height:44px;border-radius:14px;background:linear-gradient(135deg,var(--accent2),var(--accent));display:grid;place-items:center;color:white;box-shadow:var(--shadow);overflow:hidden}.brand-logo img{width:100%;height:100%;object-fit:cover}.links{display:flex;gap:14px;align-items:center;flex-wrap:wrap;justify-content:flex-end}.links a,.btn{border:1px solid var(--line);background:rgba(255,255,255,.06);color:var(--text);padding:10px 13px;border-radius:999px;font-weight:700;cursor:pointer;transition:.18s ease}.links a:hover,.btn:hover{transform:translateY(-1px);background:rgba(255,255,255,.11)}.primary{background:linear-gradient(135deg,var(--accent2),var(--accent));border:0;color:white}.hero{padding:78px 0 48px}.hero-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:28px;align-items:center}.badge{display:inline-flex;gap:8px;align-items:center;padding:8px 12px;border:1px solid var(--line);border-radius:999px;color:var(--muted);background:rgba(255,255,255,.05);font-weight:700}h1{font-size:clamp(42px,7vw,78px);line-height:.96;margin:18px 0;letter-spacing:-2px}.lead{color:var(--muted);font-size:clamp(17px,2vw,21px);line-height:1.6;max-width:680px}.hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:26px}.hero-card,.card{background:linear-gradient(180deg,rgba(255,255,255,.08),rgba(255,255,255,.035));border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow)}.hero-card{padding:18px;overflow:hidden}.hero-photo{height:360px;border-radius:16px;background:linear-gradient(135deg,rgba(77,163,255,.45),rgba(49,196,141,.35)),url('https://images.unsplash.com/photo-1526232761682-d26e03ac148e?auto=format&fit=crop&w=1400&q=80');background-size:cover;background-position:center;display:flex;align-items:flex-end;padding:18px}.photo-label{background:rgba(0,0,0,.55);border:1px solid rgba(255,255,255,.22);padding:14px;border-radius:14px}.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:12px}.stat{background:rgba(255,255,255,.06);border:1px solid var(--line);border-radius:14px;padding:14px}.stat strong{display:block;font-size:24px}section{padding:54px 0}.section-head{display:flex;justify-content:space-between;align-items:end;gap:18px;margin-bottom:20px}h2{font-size:clamp(28px,4vw,44px);margin:0 0 8px;letter-spacing:-1px}.muted{color:var(--muted)}.grid{display:grid;gap:18px}.grid-3{grid-template-columns:repeat(3,1fr)}.grid-2{grid-template-columns:repeat(2,1fr)}.event-card{overflow:hidden}.event-img{height:185px;background:rgba(255,255,255,.07);object-fit:cover;width:100%}.event-body{padding:18px}.event-top{display:flex;justify-content:space-between;gap:12px;align-items:flex-start;margin-bottom:10px}.event-logo{width:52px;height:52px;border-radius:14px;object-fit:cover;border:1px solid var(--line);background:rgba(255,255,255,.08)}.pill{display:inline-flex;padding:7px 10px;border-radius:999px;border:1px solid var(--line);color:var(--muted);font-size:13px;font-weight:800}.price{color:#ddfff0;background:rgba(49,196,141,.13);border-color:rgba(49,196,141,.35)}.card{padding:20px}.media-card img{height:210px;width:100%;object-fit:cover;border-radius:14px;margin-bottom:12px}.rules-list{display:grid;gap:12px}.rule{padding:14px;border:1px solid var(--line);border-radius:14px;background:rgba(255,255,255,.05)}.footer{border-top:1px solid var(--line);padding:34px 0;color:var(--muted)}.loading{padding:28px;border:1px solid var(--line);border-radius:18px;color:var(--muted);background:rgba(255,255,255,.05)}@media(max-width:860px){.hero-grid,.grid-2,.grid-3{grid-template-columns:1fr}.links{display:none}.section-head{align-items:flex-start;flex-direction:column}.hero-photo{height:260px}.stats{grid-template-columns:1fr}}
+    :root {
+      --green: #164f24;
+      --dark: #101820;
+      --white: #ffffff;
+      --yellow: #fff200;
+      --muted: #f1f5f9;
+      --card: rgba(255,255,255,.94);
+      --shadow: 0 18px 45px rgba(0,0,0,.28);
+      --max: 1180px;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body { margin: 0; color: var(--dark); background: #f7faf7; }
+    a { color: inherit; text-decoration: none; }
+    img { max-width: 100%; display: block; }
+    .wrap { width: min(var(--max), calc(100% - 32px)); margin: 0 auto; }
+
+    .hero {
+      min-height: 92vh;
+      position: relative;
+      color: white;
+      overflow: hidden;
+      background:
+        linear-gradient(rgba(0,0,0,.30), rgba(0,0,0,.35)),
+        url("https://images.unsplash.com/photo-1459865264687-595d652de67e?auto=format&fit=crop&w=1800&q=85");
+      background-size: cover;
+      background-position: center;
+    }
+
+    .topbar {
+      position: relative;
+      z-index: 5;
+      height: 78px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 22px;
+      padding: 0 18px;
+      font-weight: 800;
+      text-shadow: 0 2px 8px rgba(0,0,0,.55);
+    }
+
+    .nav-left, .nav-right {
+      display: flex;
+      align-items: center;
+      gap: 22px;
+      flex-wrap: wrap;
+    }
+
+    .topbar a { color: white; font-size: 15px; }
+    .topbar a:hover { color: var(--yellow); }
+
+    .logo-wrap {
+      position: relative;
+      width: 150px;
+      height: 110px;
+      display: grid;
+      place-items: center;
+      margin: 0 8px;
+    }
+
+    .logo-badge {
+      width: 135px;
+      height: 105px;
+      background: rgba(255,255,255,.88);
+      color: #111;
+      border-radius: 18px;
+      display: grid;
+      place-items: center;
+      text-align: center;
+      font-weight: 950;
+      line-height: .95;
+      box-shadow: 0 8px 24px rgba(0,0,0,.28);
+      padding: 10px;
+      overflow: hidden;
+    }
+
+    .logo-badge img { width: 100%; height: 100%; object-fit: contain; }
+    .logo-main { font-size: 20px; letter-spacing: .5px; }
+    .logo-sub { font-size: 9px; margin-top: 5px; letter-spacing: .6px; }
+
+    .hero-content {
+      position: relative;
+      z-index: 3;
+      text-align: center;
+      padding-top: 22px;
+    }
+
+    h1 {
+      margin: 0 auto 28px;
+      font-size: clamp(40px, 5vw, 74px);
+      line-height: 1.05;
+      letter-spacing: 1px;
+      color: white;
+      text-shadow: 0 5px 14px rgba(0,0,0,.75);
+      max-width: 1120px;
+      font-weight: 950;
+    }
+
+    .photo-strip {
+      width: min(100%, 1280px);
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(6, 1fr);
+      gap: 14px;
+      padding: 0 16px;
+    }
+
+    .photo-card {
+      height: 285px;
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: 0 12px 32px rgba(0,0,0,.36);
+      border: 1px solid rgba(255,255,255,.28);
+      background: rgba(255,255,255,.18);
+    }
+
+    .photo-card img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .cta-yellow {
+      display: inline-block;
+      margin-top: 18px;
+      font-size: clamp(27px, 3vw, 42px);
+      color: var(--yellow);
+      font-weight: 950;
+      text-shadow: 0 4px 12px rgba(0,0,0,.8);
+    }
+
+    .down-arrow {
+      margin: 8px auto 0;
+      width: 54px;
+      height: 54px;
+      background: white;
+      color: #73565a;
+      border-radius: 50%;
+      display: grid;
+      place-items: center;
+      font-size: 34px;
+      font-weight: 950;
+      box-shadow: 0 8px 18px rgba(0,0,0,.22);
+    }
+
+    .clouds {
+      position: absolute;
+      left: -4%;
+      right: -4%;
+      bottom: -72px;
+      height: 190px;
+      z-index: 2;
+      pointer-events: none;
+    }
+
+    .cloud {
+      position: absolute;
+      bottom: 0;
+      background: white;
+      border-radius: 999px 999px 0 0;
+    }
+
+    .cloud.c1 { width: 210px; height: 120px; left: 0; }
+    .cloud.c2 { width: 170px; height: 110px; left: 120px; bottom: 10px; }
+    .cloud.c3 { width: 140px; height: 82px; left: 260px; bottom: -8px; }
+    .cloud.c4 { width: 260px; height: 126px; left: 380px; bottom: -12px; }
+    .cloud.c5 { width: 120px; height: 92px; left: 585px; bottom: 10px; }
+    .cloud.c6 { width: 185px; height: 130px; left: 670px; bottom: 22px; }
+    .cloud.c7 { width: 205px; height: 130px; left: 810px; bottom: -5px; }
+    .cloud.c8 { width: 245px; height: 135px; right: 360px; bottom: 18px; }
+    .cloud.c9 { width: 220px; height: 110px; right: 210px; bottom: 8px; }
+    .cloud.c10 { width: 330px; height: 130px; right: -20px; bottom: -5px; }
+    .cloud-base { position:absolute; left:0; right:0; bottom:0; height:80px; background:white; }
+
+    .section {
+      padding: 70px 0;
+    }
+
+    .section-head {
+      text-align: center;
+      margin-bottom: 32px;
+    }
+
+    .section-head h2 {
+      font-size: clamp(32px, 4vw, 54px);
+      margin: 0 0 8px;
+      color: var(--green);
+      font-weight: 950;
+    }
+
+    .section-head p {
+      margin: 0;
+      font-size: 18px;
+      color: #52616f;
+    }
+
+    .events-grid, .media-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 22px;
+    }
+
+    .event-card, .info-card, .media-card, .rule-card {
+      background: white;
+      border-radius: 18px;
+      box-shadow: 0 12px 30px rgba(13, 56, 25, .12);
+      overflow: hidden;
+      border: 1px solid #e5efe7;
+    }
+
+    .event-img, .media-card img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+    }
+
+    .event-body, .media-body, .info-card, .rule-card {
+      padding: 22px;
+    }
+
+    .event-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 12px;
+    }
+
+    .event-logo {
+      width: 58px;
+      height: 58px;
+      border-radius: 14px;
+      object-fit: cover;
+      border: 2px solid #e5efe7;
+    }
+
+    .date-pill, .price-pill {
+      display: inline-block;
+      font-weight: 900;
+      border-radius: 999px;
+      padding: 8px 12px;
+      font-size: 13px;
+    }
+
+    .date-pill { background: #eef8f0; color: var(--green); }
+    .price-pill { background: #fff8c4; color: #705900; margin: 10px 0 16px; }
+
+    .event-card h3, .media-card h3 {
+      margin: 14px 0 8px;
+      color: #152019;
+      font-size: 23px;
+    }
+
+    .event-card p, .media-card p, .info-card p, .rule-card p {
+      color: #52616f;
+      line-height: 1.55;
+    }
+
+    .btn {
+      display: inline-block;
+      background: var(--green);
+      color: white;
+      padding: 12px 18px;
+      border-radius: 999px;
+      font-weight: 900;
+    }
+
+    .btn:hover { background: #0e3718; }
+
+    .info-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 24px;
+    }
+
+    .rules-list {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 16px;
+    }
+
+    .rule-card {
+      display: flex;
+      gap: 14px;
+      align-items: flex-start;
+    }
+
+    .rule-number {
+      min-width: 38px;
+      height: 38px;
+      border-radius: 50%;
+      background: var(--green);
+      color: white;
+      display: grid;
+      place-items: center;
+      font-weight: 950;
+    }
+
+    footer {
+      background: var(--green);
+      color: white;
+      padding: 34px 0;
+      text-align: center;
+      font-weight: 800;
+    }
+
+    .mobile-admin {
+      display: none;
+      position: fixed;
+      right: 14px;
+      bottom: 14px;
+      z-index: 20;
+      background: var(--green);
+      color: white;
+      padding: 12px 16px;
+      border-radius: 999px;
+      box-shadow: var(--shadow);
+      font-weight: 900;
+    }
+
+    @media (max-width: 1000px) {
+      .photo-strip { grid-template-columns: repeat(3, 1fr); }
+      .photo-card { height: 230px; }
+      .events-grid, .media-grid { grid-template-columns: repeat(2, 1fr); }
+    }
+
+    @media (max-width: 720px) {
+      .topbar { justify-content: space-between; height: auto; padding: 12px 16px; }
+      .nav-left, .nav-right { display: none; }
+      .logo-wrap { margin: 0 auto; }
+      .mobile-admin { display: inline-block; }
+      .hero { min-height: 760px; }
+      .hero-content { padding-top: 6px; }
+      .photo-strip { grid-template-columns: repeat(2, 1fr); gap: 10px; }
+      .photo-card { height: 180px; }
+      .events-grid, .media-grid, .info-grid, .rules-list { grid-template-columns: 1fr; }
+      .clouds { bottom: -95px; }
+    }
   </style>
 </head>
 <body>
-  <nav class="nav"><div class="wrap nav-inner"><a href="#" class="brand"><span class="brand-logo" id="brandLogo">SC</span><span id="brandName">Sports Complex</span></a><div class="links"><a href="#schedule">Schedule</a><a href="#media">Media</a><a href="#rules">Rules</a><a href="#info">Park Info</a><a href="/admin/">Admin</a></div></div></nav>
-  <main>
-    <section class="hero"><div class="wrap hero-grid"><div><span class="badge" id="tagline">Tournaments • Leagues • Training • Events</span><h1 id="heroTitle">Loading...</h1><p class="lead" id="heroText"></p><div class="hero-actions"><a class="btn primary" href="#schedule">View Schedule</a><a class="btn" href="#info">Park Information</a></div></div><div class="hero-card"><div class="hero-photo" id="heroPhoto"><div class="photo-label"><strong>Open for teams, families, and fans</strong><div class="muted">Check event details before arriving.</div></div></div><div class="stats"><div class="stat"><strong id="stat1">-</strong><span class="muted" id="stat1Label"></span></div><div class="stat"><strong id="stat2">-</strong><span class="muted" id="stat2Label"></span></div><div class="stat"><strong id="stat3">-</strong><span class="muted" id="stat3Label"></span></div></div></div></div></section>
-    <section id="schedule"><div class="wrap"><div class="section-head"><div><h2>Upcoming Schedule</h2><p class="muted">Each event includes description, picture, logo, price, and registration.</p></div><span class="pill" id="eventCount">0 events</span></div><div class="grid grid-3" id="eventsGrid"><div class="loading">Loading events...</div></div></div></section>
-    <section id="media"><div class="wrap"><div class="section-head"><div><h2>Media</h2><p class="muted">Photos, highlights, facility images, and announcements.</p></div></div><div class="grid grid-3" id="mediaGrid"><div class="loading">Loading media...</div></div></div></section>
-    <section id="rules"><div class="wrap grid grid-2"><div><h2>Park Rules</h2><p class="muted">Help keep the complex safe, clean, and family-friendly.</p></div><div class="rules-list" id="rulesList"></div></div></section>
-    <section id="info"><div class="wrap grid grid-2"><div class="card"><h2>Park Information</h2><p class="muted" id="parkInfo"></p></div><div class="card"><h2>Contact</h2><p><strong>Address:</strong> <span id="address"></span></p><p><strong>Phone:</strong> <span id="phone"></span></p><p><strong>Email:</strong> <span id="email"></span></p><p><strong>Hours:</strong> <span id="hours"></span></p></div></div></section>
-  </main>
-  <footer class="footer"><div class="wrap"><strong id="footerName">Sports Complex</strong><div>© <span id="year"></span> • Powered by GitHub, Netlify, and Decap CMS.</div></div></footer>
+  <a class="mobile-admin" href="/admin/">Admin</a>
+
+  <header class="hero" id="homeHero">
+    <nav class="topbar">
+      <div class="nav-left">
+        <a href="#info">About</a>
+        <a href="#schedule">Events</a>
+        <a href="#rules">Rules</a>
+      </div>
+
+      <a href="#" class="logo-wrap">
+        <div class="logo-badge" id="brandLogo">
+          <div>
+            <div class="logo-main">SPORTS</div>
+            <div class="logo-sub">COMPLEX</div>
+          </div>
+        </div>
+      </a>
+
+      <div class="nav-right">
+        <a href="#schedule">Private Rentals</a>
+        <a href="#media">Gallery</a>
+        <a href="#info">Contact</a>
+        <a href="/admin/">Admin</a>
+      </div>
+    </nav>
+
+    <div class="hero-content">
+      <h1 id="heroTitle">A Premier Sporting Destination</h1>
+      <div class="photo-strip" id="heroMediaStrip"></div>
+      <a class="cta-yellow" id="registerText" href="#schedule">Register for Baseball & Softball</a>
+      <a href="#schedule" class="down-arrow">↓</a>
+    </div>
+
+    <div class="clouds" aria-hidden="true">
+      <div class="cloud c1"></div><div class="cloud c2"></div><div class="cloud c3"></div><div class="cloud c4"></div><div class="cloud c5"></div>
+      <div class="cloud c6"></div><div class="cloud c7"></div><div class="cloud c8"></div><div class="cloud c9"></div><div class="cloud c10"></div>
+      <div class="cloud-base"></div>
+    </div>
+  </header>
+
+  <section class="section" id="schedule">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>Upcoming Events</h2>
+        <p>View event details, pricing, photos, and registration information.</p>
+      </div>
+      <div class="events-grid" id="eventsGrid"></div>
+    </div>
+  </section>
+
+  <section class="section" id="media">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>Gallery</h2>
+        <p>Photos, highlights, facility images, and announcements.</p>
+      </div>
+      <div class="media-grid" id="mediaGrid"></div>
+    </div>
+  </section>
+
+  <section class="section" id="rules">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>Park Rules</h2>
+        <p>Please follow all posted rules while visiting the complex.</p>
+      </div>
+      <div class="rules-list" id="rulesList"></div>
+    </div>
+  </section>
+
+  <section class="section" id="info">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>Park Information</h2>
+        <p id="heroText">Everything guests, teams, and families need to know.</p>
+      </div>
+      <div class="info-grid">
+        <div class="info-card">
+          <h3 id="brandName">Sports Complex</h3>
+          <p id="parkInfo"></p>
+        </div>
+        <div class="info-card">
+          <h3>Contact</h3>
+          <p><strong>Address:</strong> <span id="address"></span></p>
+          <p><strong>Phone:</strong> <span id="phone"></span></p>
+          <p><strong>Email:</strong> <span id="email"></span></p>
+          <p><strong>Hours:</strong> <span id="hours"></span></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="wrap">
+      <span id="footerName">Sports Complex</span> © <span id="year"></span>
+    </div>
+  </footer>
+
   <script>
-    const fallback="https://images.unsplash.com/photo-1526232761682-d26e03ac148e?auto=format&fit=crop&w=1200&q=80";
-    function escapeHtml(str=""){return String(str).replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#039;'}[m]))}
-    function initials(name){return(name||"SC").split(" ").map(w=>w[0]).join("").slice(0,2).toUpperCase()}
-    async function getJSON(path){const res=await fetch(path+"?v="+Date.now());if(!res.ok)throw new Error("Could not load "+path);return res.json()}
-    function imagePath(src){if(!src)return"";return src.startsWith("/")||src.startsWith("http")?src:"/"+src}
-    async function renderSite(){try{const[site,eventsData,mediaData,rulesData]=await Promise.all([getJSON("/content/site.json"),getJSON("/content/events.json"),getJSON("/content/media.json"),getJSON("/content/rules.json")]);document.title=site.name||"Sports Complex";document.getElementById("brandName").textContent=site.name||"Sports Complex";document.getElementById("footerName").textContent=site.name||"Sports Complex";document.getElementById("tagline").textContent=site.tagline||"";document.getElementById("heroTitle").textContent=site.heroTitle||"";document.getElementById("heroText").textContent=site.heroText||"";document.getElementById("parkInfo").textContent=site.parkInfo||"";document.getElementById("address").textContent=site.address||"";document.getElementById("phone").textContent=site.phone||"";document.getElementById("email").textContent=site.email||"";document.getElementById("hours").textContent=site.hours||"";document.getElementById("stat1").textContent=site.stat1||"";document.getElementById("stat2").textContent=site.stat2||"";document.getElementById("stat3").textContent=site.stat3||"";document.getElementById("stat1Label").textContent=site.stat1Label||"";document.getElementById("stat2Label").textContent=site.stat2Label||"";document.getElementById("stat3Label").textContent=site.stat3Label||"";document.getElementById("year").textContent=new Date().getFullYear();const brandLogo=document.getElementById("brandLogo");if(site.logo)brandLogo.innerHTML=`<img src="${escapeHtml(imagePath(site.logo))}" alt="${escapeHtml(site.name)} logo">`;else brandLogo.textContent=initials(site.name);if(site.heroImage){document.getElementById("heroPhoto").style.backgroundImage=`linear-gradient(135deg, rgba(77,163,255,.45), rgba(49,196,141,.35)), url('${imagePath(site.heroImage)}')`}const events=eventsData.events||[];document.getElementById("eventCount").textContent=`${events.length} event${events.length===1?"":"s"}`;document.getElementById("eventsGrid").innerHTML=events.map(ev=>`<article class="card event-card"><img class="event-img" src="${escapeHtml(imagePath(ev.image)||fallback)}" alt="${escapeHtml(ev.title)}" onerror="this.src='${fallback}'"><div class="event-body"><div class="event-top"><div><span class="pill">${escapeHtml(ev.date||"")}</span><h3>${escapeHtml(ev.title||"")}</h3></div>${ev.logo?`<img class="event-logo" src="${escapeHtml(imagePath(ev.logo))}" alt="Event logo" onerror="this.style.display='none'">`:""}</div><p class="muted">${escapeHtml(ev.description||"")}</p><p><span class="pill price">${escapeHtml(ev.price||"")}</span></p>${ev.register?`<a class="btn primary" href="${escapeHtml(ev.register)}" target="_blank" rel="noopener">Register</a>`:""}</div></article>`).join("")||`<div class="card"><p class="muted">No events posted yet.</p></div>`;const media=mediaData.media||[];document.getElementById("mediaGrid").innerHTML=media.map(m=>`<article class="card media-card"><img src="${escapeHtml(imagePath(m.image)||fallback)}" alt="${escapeHtml(m.title)}" onerror="this.src='${fallback}'"><h3>${escapeHtml(m.title||"")}</h3><p class="muted">${escapeHtml(m.caption||"")}</p></article>`).join("")||`<div class="card"><p class="muted">No media posted yet.</p></div>`;const rules=rulesData.rules||[];document.getElementById("rulesList").innerHTML=rules.map((r,i)=>`<div class="rule"><strong>${i+1}.</strong> ${escapeHtml(r.rule||r)}</div>`).join("")}catch(err){document.getElementById("heroTitle").textContent="Website content could not load.";document.getElementById("heroText").textContent="Make sure the content folder was uploaded to GitHub.";console.error(err)}}
+    const fallback = "https://images.unsplash.com/photo-1459865264687-595d652de67e?auto=format&fit=crop&w=1200&q=80";
+
+    function escapeHtml(str = "") {
+      return String(str).replace(/[&<>"']/g, m => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#039;'}[m]));
+    }
+
+    function imagePath(src) {
+      if (!src) return "";
+      return src.startsWith("/") || src.startsWith("http") ? src : "/" + src;
+    }
+
+    async function getJSON(path) {
+      const res = await fetch(path + "?v=" + Date.now());
+      if (!res.ok) throw new Error("Could not load " + path);
+      return res.json();
+    }
+
+    function renderLogo(site) {
+      const logoBox = document.getElementById("brandLogo");
+      if (site.logo) {
+        logoBox.innerHTML = `<img src="${escapeHtml(imagePath(site.logo))}" alt="${escapeHtml(site.name || 'Logo')}">`;
+      } else {
+        logoBox.innerHTML = `<div><div class="logo-main">${escapeHtml((site.name || 'SPORTS').split(' ')[0])}</div><div class="logo-sub">SPORTS AND ENTERTAINMENT</div></div>`;
+      }
+    }
+
+    async function renderSite() {
+      try {
+        const [site, eventsData, mediaData, rulesData] = await Promise.all([
+          getJSON("/content/site.json"),
+          getJSON("/content/events.json"),
+          getJSON("/content/media.json"),
+          getJSON("/content/rules.json")
+        ]);
+
+        document.title = site.name || "Sports Complex";
+        document.getElementById("brandName").textContent = site.name || "Sports Complex";
+        document.getElementById("footerName").textContent = site.name || "Sports Complex";
+        document.getElementById("heroTitle").textContent = site.heroTitle || "A Premier Sporting Destination";
+        document.getElementById("heroText").textContent = site.heroText || "";
+        document.getElementById("parkInfo").textContent = site.parkInfo || "";
+        document.getElementById("address").textContent = site.address || "";
+        document.getElementById("phone").textContent = site.phone || "";
+        document.getElementById("email").textContent = site.email || "";
+        document.getElementById("hours").textContent = site.hours || "";
+        document.getElementById("year").textContent = new Date().getFullYear();
+        renderLogo(site);
+
+        if (site.heroImage) {
+          document.getElementById("homeHero").style.backgroundImage =
+            `linear-gradient(rgba(0,0,0,.30), rgba(0,0,0,.35)), url('${imagePath(site.heroImage)}')`;
+        }
+
+        const media = mediaData.media || [];
+        const events = eventsData.events || [];
+        const heroImages = [
+          ...media.map(m => m.image),
+          ...events.map(e => e.image)
+        ].filter(Boolean).slice(0, 6);
+
+        document.getElementById("heroMediaStrip").innerHTML = heroImages.map(src => `
+          <div class="photo-card"><img src="${escapeHtml(imagePath(src))}" onerror="this.src='${fallback}'" alt="Sports complex photo"></div>
+        `).join("");
+
+        const firstRegister = events.find(e => e.register)?.register || "#schedule";
+        document.getElementById("registerText").href = firstRegister;
+
+        document.getElementById("eventsGrid").innerHTML = events.map(ev => `
+          <article class="event-card">
+            <img class="event-img" src="${escapeHtml(imagePath(ev.image) || fallback)}" alt="${escapeHtml(ev.title || '')}" onerror="this.src='${fallback}'">
+            <div class="event-body">
+              <div class="event-top">
+                <div>
+                  <span class="date-pill">${escapeHtml(ev.date || "")}</span>
+                  <h3>${escapeHtml(ev.title || "")}</h3>
+                </div>
+                ${ev.logo ? `<img class="event-logo" src="${escapeHtml(imagePath(ev.logo))}" alt="Event logo" onerror="this.style.display='none'">` : ""}
+              </div>
+              <p>${escapeHtml(ev.description || "")}</p>
+              ${ev.price ? `<span class="price-pill">${escapeHtml(ev.price)}</span><br>` : ""}
+              ${ev.register ? `<a class="btn" href="${escapeHtml(ev.register)}" target="_blank" rel="noopener">Register</a>` : ""}
+            </div>
+          </article>
+        `).join("") || `<div class="info-card"><p>No events posted yet.</p></div>`;
+
+        document.getElementById("mediaGrid").innerHTML = media.map(m => `
+          <article class="media-card">
+            <img src="${escapeHtml(imagePath(m.image) || fallback)}" alt="${escapeHtml(m.title || '')}" onerror="this.src='${fallback}'">
+            <div class="media-body">
+              <h3>${escapeHtml(m.title || "")}</h3>
+              <p>${escapeHtml(m.caption || "")}</p>
+            </div>
+          </article>
+        `).join("") || `<div class="info-card"><p>No media posted yet.</p></div>`;
+
+        const rules = rulesData.rules || [];
+        document.getElementById("rulesList").innerHTML = rules.map((r, i) => `
+          <div class="rule-card">
+            <div class="rule-number">${i + 1}</div>
+            <p>${escapeHtml(r.rule || r)}</p>
+          </div>
+        `).join("");
+      } catch (err) {
+        console.error(err);
+        document.getElementById("heroTitle").textContent = "Website content could not load.";
+        document.getElementById("heroText").textContent = "Make sure your content folder is uploaded to GitHub.";
+      }
+    }
+
     renderSite();
   </script>
 </body>
