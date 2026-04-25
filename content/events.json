@@ -1,13 +1,42 @@
 {
+  "categories": [
+    "Baseball",
+    "Softball",
+    "Flag Football",
+    "Private Rentals",
+    "Camps",
+    "Tournaments"
+  ],
   "events": [
     {
-      "title": "September Show Down",
-      "date": "September 18-20",
-      "price": "870 Per Team",
-      "register": "https://sportsthread.com/partner-frame/606/tournaments/12935",
-      "image": "/uploads/a98d41cb-1fe3-4a81-8379-8058c4a8b913.png",
-      "logo": "/uploads/a98d41cb-1fe3-4a81-8379-8058c4a8b913.png",
-      "description": "- 3 GG\n- Winners Get Rings/Plaque\n- A/B Divisions\n"
+      "title": "Baseball & Softball Registration",
+      "category": "Tournaments",
+      "date": "Now Open",
+      "price": "See event details",
+      "register": "#private-rentals",
+      "image": "/uploads/slider/home-slider-01.jpg",
+      "logo": "/uploads/branding/adventure-logo.png",
+      "description": "Registration is open for upcoming baseball and softball events at Adventure Sports and Entertainment. Check back for dates, pricing, and details."
+    },
+    {
+      "title": "Private Field Rentals",
+      "category": "Private Rentals",
+      "date": "Available by Request",
+      "price": "Starting at $50/hr",
+      "register": "#private-rentals",
+      "image": "/uploads/branding/hero-aerial-field.jpg",
+      "logo": "/uploads/branding/adventure-logo.png",
+      "description": "Rent outdoor fields, practice turf areas, batting cages, or clubhouse space for teams, practices, events, and organizations."
+    },
+    {
+      "title": "Flag Football Events",
+      "category": "Flag Football",
+      "date": "Coming Soon",
+      "price": "TBD",
+      "register": "#private-rentals",
+      "image": "/uploads/slider/home-slider-05.jpg",
+      "logo": "/uploads/branding/adventure-logo.png",
+      "description": "Flag football programming and events are coming to Adventure Sports. Submit a rental or event request for more information."
     }
   ]
 }

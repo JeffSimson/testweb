@@ -1,11 +1,21 @@
 {
-  "heroText": "A Premier Sporting Destination",
-  "logo": "/uploads/adventure-logo-color5.png",
   "name": "Adventure Sports and Entertainment",
-  "phone": "",
-  "tagline": "A Premier Sporting Destination",
-  "address": "515 Monmouth Rd",
-  "parkInfo": "Adventure Sports & Entertainment LLC, was were formed to provide a community resource for athletes. We partner with national training experts to offer teams and organizations the best training opportunities and then host weekend tournaments for National and regional teams that showcase their talent. As a premier destination we offer the best amenities at our park along with discounts to enjoy local attractions.",
+  "headline": "A Premier Sporting Destination",
+  "heroButtonText": "Register for Baseball & Softball",
+  "heroButtonUrl": "#events",
+  "logo": "/uploads/branding/adventure-logo.png",
+  "heroImage": "/uploads/branding/hero-aerial-field.jpg",
+  "aboutTitle": "Adventure Sports and Entertainment",
+  "aboutText": "Adventure Sports and Entertainment is a premier outdoor sports complex in Jackson, NJ, built for baseball, softball, flag football, tournaments, camps, rentals, and community events. Enjoy high-quality turf fields, batting cages, clubhouse amenities, concessions, and a family-friendly game day atmosphere.",
+  "address": "515 Monmouth Road, Building 210, Jackson, NJ",
+  "phone": "732-580-1731",
   "email": "",
-  "heroTitle": "Adventure Sports and Entertainment"
+  "hours": "7:00 AM \u2013 10:00 PM, Monday \u2013 Sunday",
+  "kitchenHours": "Kitchen closes at 9:00 PM",
+  "facebook": "https://www.facebook.com/AdventureSportsAndEntertainment",
+  "parking": "Free on-site parking is available. Overflow parking is available near the dome. Do not park in the side lots to the right of the A fields.",
+  "mapImage": "/uploads/maps/facility-map.jpg",
+  "mapEmbed": "https://www.google.com/maps?q=515%20Monmouth%20Road%20Building%20210%20Jackson%20NJ&output=embed",
+  "waiverUrl": "https://form.jotform.com/232632661950052",
+  "menuUrl": "https://www.clover.com/online-ordering/adventure-sports-enterta-jackson"
 }

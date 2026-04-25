@@ -1,0 +1,26 @@
+{
+  "title": "Private Rentals",
+  "intro": "Please fill out the form below with dates/times to make a request.",
+  "rates": [
+    {
+      "label": "Outdoor Field Rental Rates",
+      "price": "$50/hr to $125/hr depending on event. Please contact for more info."
+    },
+    {
+      "label": "Practice Turf Area",
+      "price": "$60/hr"
+    },
+    {
+      "label": "Batting Cages",
+      "price": "$35/hr per cage"
+    },
+    {
+      "label": "Long-Term Rentals",
+      "price": "Discounts are available for long-term rentals."
+    }
+  ],
+  "emails": [
+    "asejakemollica1@gmail.com",
+    "asealec1@gmail.com"
+  ]
+}

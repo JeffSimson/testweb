@@ -1,0 +1,49 @@
+{
+  "title": "Clubhouse",
+  "intro": "At this time, we don't accept online orders, but you can view the menu.",
+  "tagline": "Come for the sport and enjoy the food!",
+  "menuText": "Click to View Our Menu",
+  "menuUrl": "https://www.clover.com/online-ordering/adventure-sports-enterta-jackson",
+  "photos": [
+    {
+      "title": "Clubhouse kitchen and team pennants",
+      "image": "/uploads/clubhouse/clubhouse-01.png",
+      "caption": "Clubhouse kitchen and team pennants"
+    },
+    {
+      "title": "Clubhouse kitchen with a mascot visit",
+      "image": "/uploads/clubhouse/clubhouse-02.png",
+      "caption": "Clubhouse kitchen with a mascot visit"
+    },
+    {
+      "title": "Clubhouse event setup overlooking the fields",
+      "image": "/uploads/clubhouse/clubhouse-03.png",
+      "caption": "Clubhouse event setup overlooking the fields"
+    },
+    {
+      "title": "Soft serve treat with a field view",
+      "image": "/uploads/clubhouse/clubhouse-04.png",
+      "caption": "Soft serve treat with a field view"
+    },
+    {
+      "title": "Food from the clubhouse menu",
+      "image": "/uploads/clubhouse/clubhouse-05.png",
+      "caption": "Food from the clubhouse menu"
+    },
+    {
+      "title": "Teams enjoying the clubhouse",
+      "image": "/uploads/clubhouse/clubhouse-06.png",
+      "caption": "Teams enjoying the clubhouse"
+    },
+    {
+      "title": "Soft serve bowls",
+      "image": "/uploads/clubhouse/clubhouse-07.png",
+      "caption": "Soft serve bowls"
+    },
+    {
+      "title": "Hot dog flight from the clubhouse",
+      "image": "/uploads/clubhouse/clubhouse-08.png",
+      "caption": "Hot dog flight from the clubhouse"
+    }
+  ]
+}

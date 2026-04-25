@@ -1,11 +1,19 @@
-﻿# Sports Complex Website with Decap CMS
+# Adventure Sports and Entertainment Website
 
-Admin link after deployment:
-https://YOUR-SITE-NAME.netlify.app/admin/
+## Deploy
+Upload all files/folders in this project to GitHub, then connect the repo to Netlify.
 
-How updates work:
-1. Log in to /admin/
-2. Edit events, media, rules, or site info
-3. Click Publish
-4. Decap CMS saves the change to GitHub
-5. Netlify automatically updates the live website
+Build command: leave blank
+Publish directory: .
+
+## Admin
+After Netlify deploys, enable Identity and Git Gateway. Admin URL:
+
+https://YOUR-SITE.netlify.app/admin/
+
+The Admin link is hidden from the public menu.
+
+## Forms
+Private rental requests use Netlify Forms. In Netlify, go to Forms to view submissions. Add email notifications in Netlify so requests go to:
+- asejakemollica1@gmail.com
+- asealec1@gmail.com

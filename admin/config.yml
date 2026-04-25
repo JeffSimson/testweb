@@ -1,4 +1,4 @@
-﻿backend:
+backend:
   name: git-gateway
   branch: main
 
@@ -15,60 +15,158 @@ collections:
         format: "json"
         fields:
           - { label: "Complex Name", name: "name", widget: "string" }
-          - { label: "Tagline", name: "tagline", widget: "string", required: false }
-          - { label: "Logo", name: "logo", widget: "image", required: false }
-          - { label: "Hero Title", name: "heroTitle", widget: "string" }
-          - { label: "Hero Text", name: "heroText", widget: "text" }
-          - { label: "Hero Image", name: "heroImage", widget: "image", required: false }
-          - { label: "Park Information", name: "parkInfo", widget: "text" }
-          - { label: "Address", name: "address", widget: "string", required: false }
-          - { label: "Phone", name: "phone", widget: "string", required: false }
+          - { label: "Headline", name: "headline", widget: "string" }
+          - { label: "Hero Button Text", name: "heroButtonText", widget: "string" }
+          - { label: "Hero Button URL", name: "heroButtonUrl", widget: "string" }
+          - { label: "Logo", name: "logo", widget: "image" }
+          - { label: "Hero Background Image", name: "heroImage", widget: "image" }
+          - { label: "About Title", name: "aboutTitle", widget: "string" }
+          - { label: "About Text", name: "aboutText", widget: "text" }
+          - { label: "Address", name: "address", widget: "string" }
+          - { label: "Phone", name: "phone", widget: "string" }
           - { label: "Email", name: "email", widget: "string", required: false }
-          - { label: "Hours", name: "hours", widget: "string", required: false }
-          - { label: "Stat 1", name: "stat1", widget: "string", required: false }
-          - { label: "Stat 1 Label", name: "stat1Label", widget: "string", required: false }
-          - { label: "Stat 2", name: "stat2", widget: "string", required: false }
-          - { label: "Stat 2 Label", name: "stat2Label", widget: "string", required: false }
-          - { label: "Stat 3", name: "stat3", widget: "string", required: false }
-          - { label: "Stat 3 Label", name: "stat3Label", widget: "string", required: false }
-      - label: "Schedule / Events"
+          - { label: "Hours", name: "hours", widget: "string" }
+          - { label: "Kitchen Hours", name: "kitchenHours", widget: "string" }
+          - { label: "Facebook Link", name: "facebook", widget: "string", required: false }
+          - { label: "Parking Info", name: "parking", widget: "text" }
+          - { label: "Facility Map Image", name: "mapImage", widget: "image" }
+          - { label: "Google Map Embed URL", name: "mapEmbed", widget: "string" }
+          - { label: "Waiver URL", name: "waiverUrl", widget: "string" }
+          - { label: "Menu URL", name: "menuUrl", widget: "string" }
+
+      - label: "Field Status / Announcement"
+        name: "status"
+        file: "content/status.json"
+        format: "json"
+        fields:
+          - label: "Field Status"
+            name: "fieldStatus"
+            widget: "select"
+            options: ["Open", "Closed", "Delayed", "Check Schedule"]
+          - { label: "Announcement", name: "announcement", widget: "text" }
+
+      - label: "Homepage Slider"
+        name: "homepage"
+        file: "content/homepage.json"
+        format: "json"
+        fields:
+          - label: "Slider Photos"
+            name: "slider"
+            widget: "list"
+            fields:
+              - { label: "Image", name: "image", widget: "image" }
+              - { label: "Alt Text", name: "alt", widget: "string", required: false }
+
+      - label: "Events"
         name: "events"
         file: "content/events.json"
         format: "json"
         fields:
+          - label: "Event Categories"
+            name: "categories"
+            widget: "list"
           - label: "Events"
             name: "events"
             widget: "list"
-            summary: "{{fields.title}} — {{fields.date}}"
-            fields:
-              - { label: "Event Title", name: "title", widget: "string" }
-              - { label: "Date / Time", name: "date", widget: "string" }
-              - { label: "Price", name: "price", widget: "string", required: false }
-              - { label: "Registration Link", name: "register", widget: "string", required: false }
-              - { label: "Event Picture", name: "image", widget: "image", required: false }
-              - { label: "Event Logo", name: "logo", widget: "image", required: false }
-              - { label: "Description", name: "description", widget: "text", required: false }
-      - label: "Media"
-        name: "media"
-        file: "content/media.json"
-        format: "json"
-        fields:
-          - label: "Media Items"
-            name: "media"
-            widget: "list"
-            summary: "{{fields.title}}"
+            summary: "{{fields.title}} — {{fields.category}}"
             fields:
               - { label: "Title", name: "title", widget: "string" }
-              - { label: "Image", name: "image", widget: "image", required: false }
-              - { label: "Caption", name: "caption", widget: "text", required: false }
-      - label: "Rules"
-        name: "rules"
-        file: "content/rules.json"
+              - label: "Category"
+                name: "category"
+                widget: "select"
+                options: ["Baseball", "Softball", "Flag Football", "Private Rentals", "Camps", "Tournaments"]
+              - { label: "Date / Time", name: "date", widget: "string", required: false }
+              - { label: "Price", name: "price", widget: "string", required: false }
+              - { label: "Registration / Info Link", name: "register", widget: "string", required: false }
+              - { label: "Event Image", name: "image", widget: "image", required: false }
+              - { label: "Event Logo", name: "logo", widget: "image", required: false }
+              - { label: "Description", name: "description", widget: "text", required: false }
+
+      - label: "Clubhouse"
+        name: "clubhouse"
+        file: "content/clubhouse.json"
         format: "json"
         fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Intro", name: "intro", widget: "text" }
+          - { label: "Tagline", name: "tagline", widget: "string" }
+          - { label: "Menu Button Text", name: "menuText", widget: "string" }
+          - { label: "Menu URL", name: "menuUrl", widget: "string" }
+          - label: "Clubhouse Photos"
+            name: "photos"
+            widget: "list"
+            fields:
+              - { label: "Title", name: "title", widget: "string", required: false }
+              - { label: "Image", name: "image", widget: "image" }
+              - { label: "Caption", name: "caption", widget: "string", required: false }
+
+      - label: "Private Rentals"
+        name: "rentals"
+        file: "content/rentals.json"
+        format: "json"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Intro", name: "intro", widget: "text" }
+          - label: "Rates"
+            name: "rates"
+            widget: "list"
+            fields:
+              - { label: "Label", name: "label", widget: "string" }
+              - { label: "Price / Info", name: "price", widget: "string" }
+          - label: "Notification Emails"
+            name: "emails"
+            widget: "list"
+
+      - label: "Resources"
+        name: "resources"
+        file: "content/resources.json"
+        format: "json"
+        fields:
+          - label: "Resources"
+            name: "resources"
+            widget: "list"
+            fields:
+              - { label: "Name", name: "name", widget: "string" }
+              - { label: "Website URL", name: "url", widget: "string" }
+              - { label: "Logo", name: "logo", widget: "image" }
+
+      - label: "Gallery"
+        name: "gallery"
+        file: "content/gallery.json"
+        format: "json"
+        fields:
+          - label: "Gallery Photos"
+            name: "gallery"
+            widget: "list"
+            fields:
+              - { label: "Title", name: "title", widget: "string", required: false }
+              - { label: "Image", name: "image", widget: "image" }
+              - { label: "Caption", name: "caption", widget: "string", required: false }
+
+      - label: "Safety / Rules / Refund Policy"
+        name: "policies"
+        file: "content/policies.json"
+        format: "json"
+        fields:
+          - { label: "Safety Title", name: "safetyTitle", widget: "string" }
+          - { label: "Safety Text", name: "safetyText", widget: "text" }
           - label: "Rules"
             name: "rules"
             widget: "list"
-            summary: "{{fields.rule}}"
+          - { label: "Insurance Policy", name: "insurance", widget: "text" }
+          - { label: "Umpire Policy", name: "umpires", widget: "text" }
+          - { label: "Equipment Policy", name: "equipment", widget: "text" }
+          - { label: "Lost Items Policy", name: "lostItems", widget: "text" }
+          - label: "Refund Summary"
+            name: "refundSummary"
+            widget: "list"
             fields:
-              - { label: "Rule", name: "rule", widget: "string" }
+              - { label: "Label", name: "label", widget: "string" }
+              - { label: "Detail", name: "detail", widget: "string" }
+          - label: "Weather Credits"
+            name: "weatherCredits"
+            widget: "list"
+            fields:
+              - { label: "Label", name: "label", widget: "string" }
+              - { label: "Detail", name: "detail", widget: "string" }
+          - { label: "Full Refund Policy Details", name: "refundLong", widget: "text" }
