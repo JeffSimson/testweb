@@ -1,89 +1,84 @@
 {
   "gallery": [
     {
-      "title": "Field seating and spectator area",
-      "image": "/uploads/gallery/gallery-01.jpg",
-      "caption": "Field seating and spectator area"
+      "title": "Field Seating Area",
+      "image": "/uploads/gallery/gallery-1.jpg",
+      "caption": "Field Seating Area"
     },
     {
-      "title": "Softball action on turf",
-      "image": "/uploads/gallery/gallery-02.jpg",
-      "caption": "Softball action on turf"
+      "title": "Softball Field Action",
+      "image": "/uploads/gallery/gallery-2.jpg",
+      "caption": "Softball Field Action"
     },
     {
-      "title": "Fans watching from the clubhouse side",
-      "image": "/uploads/gallery/gallery-03.jpg",
-      "caption": "Fans watching from the clubhouse side"
+      "title": "Spectator Seating",
+      "image": "/uploads/gallery/gallery-3.jpg",
+      "caption": "Spectator Seating"
     },
     {
-      "title": "Batting cages and warm-up area",
-      "image": "/uploads/gallery/gallery-04.jpg",
-      "caption": "Batting cages and warm-up area"
+      "title": "Batting Cages",
+      "image": "/uploads/gallery/gallery-4.jpg",
+      "caption": "Batting Cages"
     },
     {
-      "title": "Coach and player on field",
-      "image": "/uploads/gallery/gallery-05.jpg",
-      "caption": "Coach and player on field"
+      "title": "Coach and Player on Field",
+      "image": "/uploads/gallery/gallery-5.jpg",
+      "caption": "Coach and Player on Field"
     },
     {
-      "title": "Clubhouse exterior and field view",
-      "image": "/uploads/gallery/gallery-06.jpg",
-      "caption": "Clubhouse exterior and field view"
+      "title": "Clubhouse and Fields",
+      "image": "/uploads/gallery/gallery-6.jpg",
+      "caption": "Clubhouse and Fields"
     },
     {
-      "title": "Adventure Sports facility map",
-      "image": "/uploads/gallery/gallery-07.jpg",
-      "caption": "Adventure Sports facility map"
+      "title": "Facility Map",
+      "image": "/uploads/gallery/gallery-7.jpg",
+      "caption": "Facility Map"
     },
     {
-      "title": "Sunny field view",
-      "image": "/uploads/gallery/gallery-08.jpg",
-      "caption": "Sunny field view"
+      "title": "Complex View",
+      "image": "/uploads/gallery/gallery-8.jpg",
+      "caption": "Complex View"
     },
     {
-      "title": "Softball player",
-      "image": "/uploads/gallery/gallery-09.jpg",
-      "caption": "Softball player"
+      "title": "Softball Player",
+      "image": "/uploads/gallery/gallery-9.jpg",
+      "caption": "Softball Player"
     },
     {
-      "title": "Batter on deck",
+      "title": "Batter at the Field",
       "image": "/uploads/gallery/gallery-10.jpg",
-      "caption": "Batter on deck"
+      "caption": "Batter at the Field"
     },
     {
-      "title": "Jersey Shore mascot visit",
+      "title": "Jersey Shore Mascot",
       "image": "/uploads/gallery/gallery-11.jpg",
-      "caption": "Jersey Shore mascot visit"
+      "caption": "Jersey Shore Mascot"
     },
     {
-      "title": "Flag football action",
+      "title": "Flag Football",
       "image": "/uploads/gallery/gallery-12.jpg",
-      "caption": "Flag football action"
+      "caption": "Flag Football"
     },
     {
-      "title": "Night game under the lights",
+      "title": "Night Field",
       "image": "/uploads/gallery/gallery-13.jpg",
-      "caption": "Night game under the lights"
+      "caption": "Night Field"
     },
     {
-      "title": "Community event at the field",
+      "title": "Easter Bunny at the Field",
       "image": "/uploads/gallery/gallery-14.jpg",
-      "caption": "Community event at the field"
+      "caption": "Easter Bunny at the Field"
     },
     {
-      "title": "Flag football player",
+      "title": "Flag Football Player",
       "image": "/uploads/gallery/gallery-15.jpg",
-      "caption": "Flag football player"
+      "caption": "Flag Football Player"
     },
     {
-      "title": "Softball pitcher",
+      "title": "USA Softball Pitcher",
       "image": "/uploads/gallery/gallery-16.jpg",
-      "caption": "Softball pitcher"
-    },
-    {
-      "title": "Tournament field atmosphere",
-      "image": "/uploads/gallery/gallery-17.jpg",
-      "caption": "Tournament field atmosphere"
+      "caption": "USA Softball Pitcher"
     }
   ]
 }

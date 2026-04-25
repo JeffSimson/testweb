@@ -1,0 +1,30 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Private Rentals | Adventure Sports</title><link rel="stylesheet" href="/style.css"><script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script></head><body onload="loadRentals()"><div class="page-nav">
+<nav class="top-nav">
+  <div class="wrap nav-inner">
+    <div class="nav-group">
+      <div class="dropdown nav-link"><a href="/#about">About ▾</a>
+        <div class="dropdown-menu">
+          <a href="/safety-rules-refund.html">Safety, Rules & Refund Policy</a>
+        </div>
+      </div>
+      <div class="dropdown nav-link"><a href="/events.html">Events ▾</a>
+        <div class="dropdown-menu">
+          <a href="/events.html?category=Baseball">Baseball</a>
+          <a href="/events.html?category=Softball">Softball</a>
+          <a href="/events.html?category=Flag%20Football">Flag Football</a>
+          <a href="/events.html?category=Camps">Camps</a>
+          <a href="/events.html?category=Tournaments">Tournaments</a>
+        </div>
+      </div>
+      <a class="nav-link" href="/clubhouse.html">Clubhouse</a>
+      <a class="nav-link" href="https://www.clover.com/online-ordering/adventure-sports-enterta-jackson" target="_blank" rel="noopener">Store</a>
+    </div>
+    <div class="nav-group">
+      <a class="nav-link" href="/private-rentals.html">Private Rentals</a>
+      <a class="nav-link" href="#">Discount Hotel</a>
+      <a class="nav-link" href="/gallery.html">Gallery</a>
+      <a class="nav-link" href="/#contact">Contact</a>
+    </div>
+  </div>
+</nav>
+</div><section class="page-hero"><div class="wrap"><img id="pageLogo" class="hero-logo" alt="Adventure logo"><h1>Private Rentals</h1></div></section><section class="page-section"><div class="wrap"><div class="two-grid"><div class="card"><h2>Outdoor Field Rental Rates</h2><ul id="ratesList"></ul><p><b>Please fill out the form with dates/times to make a request.</b></p></div><div class="card"><h2>Rental Request Form</h2><form name="private-rental-request" method="POST" data-netlify="true" action="/thank-you.html"><input type="hidden" name="form-name" value="private-rental-request"><div class="form-grid"><div class="form-field"><label>Name</label><input name="name" required></div><div class="form-field"><label>Email</label><input name="email" type="email" required></div><div class="form-field"><label>Phone Number</label><input name="phone" required></div><div class="form-field"><label>Intended Sport/Activity</label><input name="sport_activity"></div><div class="form-field"><label>Age Range</label><input name="age_range"></div><div class="form-field"><label>Request Type</label><select name="request_type"><option>Full Field</option><option>Practice Field</option><option>Batting Cage(s)</option><option>Clubhouse</option><option>Other</option></select></div><div class="form-field full"><label>Short Question</label><textarea name="question"></textarea></div><div class="form-field"><label>Requested Date</label><input name="requested_date" type="date"></div><div class="form-field"><label>Requested Time Start</label><input name="time_start" type="time"></div><div class="form-field"><label>Requested Time Finish</label><input name="time_finish" type="time"></div><div class="form-field"><label>Number of Participants</label><input name="participants" type="number"></div><div class="full"><button class="btn red" type="submit">Submit Rental Request</button></div></div></form></div></div></div></section><script src="/app.js"></script></body></html>
