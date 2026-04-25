@@ -1,10 +1,11 @@
 {
+  "heroText": "A Premier Sporting Destination",
+  "logo": "/uploads/adventure-logo-color5.png",
   "name": "Adventure Sports and Entertainment",
-  "address": "515 Monmouth Rd",
   "phone": "",
+  "tagline": "A Premier Sporting Destination",
+  "address": "515 Monmouth Rd",
+  "parkInfo": "Adventure Sports & Entertainment LLC, was were formed to provide a community resource for athletes. We partner with national training experts to offer teams and organizations the best training opportunities and then host weekend tournaments for National and regional teams that showcase their talent. As a premier destination we offer the best amenities at our park along with discounts to enjoy local attractions.",
   "email": "",
-  "logo": "/uploads/adventuresportsentertainment.jpg",
-  "parkInfo": "test",
-  "heroTitle": "test",
-  "heroText": "test"
+  "heroTitle": "Adventure Sports and Entertainment"
 }
