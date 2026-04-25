@@ -1,31 +1,13 @@
-﻿{
+{
   "events": [
     {
-      "title": "Spring Soccer Tournament",
-      "date": "May 10, 2026 • 9:00 AM",
-      "price": "$25 per player",
-      "register": "https://example.com/register",
-      "image": "https://images.unsplash.com/photo-1579952363873-27f3bade9f55?auto=format&fit=crop&w=1200&q=80",
-      "logo": "https://images.unsplash.com/photo-1518091043644-c1d4457512c6?auto=format&fit=crop&w=300&q=80",
-      "description": "Competitive youth soccer tournament with multiple age divisions, concessions, and awards."
-    },
-    {
-      "title": "Friday Night Flag Football",
-      "date": "May 22, 2026 • 6:30 PM",
-      "price": "$150 per team",
-      "register": "https://example.com/register",
-      "image": "https://images.unsplash.com/photo-1566577739112-5180d4bf9390?auto=format&fit=crop&w=1200&q=80",
-      "logo": "https://images.unsplash.com/photo-1517927033932-b3d18e61fb3a?auto=format&fit=crop&w=300&q=80",
-      "description": "Fast-paced flag football event under the lights. Teams must register before the deadline."
-    },
-    {
-      "title": "Summer Skills Camp",
-      "date": "June 15–19, 2026",
-      "price": "$199 per athlete",
-      "register": "https://example.com/register",
-      "image": "https://images.unsplash.com/photo-1546519638-68e109498ffc?auto=format&fit=crop&w=1200&q=80",
-      "logo": "https://images.unsplash.com/photo-1519861531473-9200262188bf?auto=format&fit=crop&w=300&q=80",
-      "description": "A week-long training camp focused on fundamentals, speed, teamwork, and competition."
+      "title": "test",
+      "date": "test",
+      "price": "tes t ",
+      "register": "test",
+      "image": "/uploads/chatgpt-image-apr-22-2026-04_23_46-pm.png",
+      "logo": "/uploads/chatgpt-image-apr-22-2026-04_23_46-pm.png",
+      "description": "test"
     }
   ]
 }
