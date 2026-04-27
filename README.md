@@ -21,3 +21,19 @@ https://YOUR-SITE.netlify.app/admin/
 Go to Netlify > Forms > private-rental-request > Notifications and add:
 asejakemollica1@gmail.com
 asealec1@gmail.com
+
+
+## Bulk Event Import
+
+Admin helper page:
+`/admin/events-import.html`
+
+How to use:
+1. Open `/admin/events-import.html`
+2. Paste event blocks
+3. Click Generate
+4. Copy the JSON result
+5. Replace the full contents of `content/events.json` in GitHub
+6. Commit changes and Netlify will redeploy
+
+This page is not linked on the public website.
