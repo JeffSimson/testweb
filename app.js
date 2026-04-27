@@ -4,11 +4,17 @@ const esc = (s="") => String(s).replace(/[&<>"']/g, m => ({'&':'&amp;','<':'&lt;
 const img = (s="") => !s ? "" : (s.startsWith("/") || s.startsWith("http") ? s : "/" + s);
 async function getJSON(path){ const r = await fetch(path+"?v="+Date.now()); if(!r.ok) throw new Error(path); return r.json(); }
 
+function renderFixedStatus(site){
+  if ($('fixedFieldStatus')) $('fixedFieldStatus').textContent = site.fieldStatus || 'OPEN';
+  if ($('fixedAnnouncement')) $('fixedAnnouncement').textContent = site.announcement || '';
+}
+
+
 async function loadHome(){
   const [site, eventsData, resData] = await Promise.all([getJSON('/content/site.json'), getJSON('/content/events.json'), getJSON('/content/resources.json')]);
+  renderFixedStatus(site);
   document.title = site.name;
   $('homeHero').style.backgroundImage = `linear-gradient(rgba(0,0,0,.25),rgba(0,0,0,.35)), url('${img(site.heroImage)}')`;
-  $('heroLogo').src = img(site.logo);
   $('heroTitle').textContent = site.headline;
   $('heroCta').textContent = site.heroButtonText;
   $('fieldStatus').textContent = site.fieldStatus;
@@ -21,6 +27,9 @@ async function loadHome(){
   $('menuQuick').href = site.menuUrl;
   $('rentalQuick').href = '/private-rentals.html';
   $('eventsQuick').href = '/events.html';
+  if ($('facilityHighlights')) $('facilityHighlights').innerHTML = (site.facilityHighlights || []).map(x => `<div class="info-mini-card"><h3>${esc(x.title)}</h3><p>${esc(x.text)}</p></div>`).join('');
+  if ($('planVisit')) $('planVisit').innerHTML = (site.planVisit || []).map(x => `<div class="visit-item">${esc(x)}</div>`).join('');
+  if ($('whyChoose')) $('whyChoose').innerHTML = (site.whyChoose || []).map(x => `<div class="why-card">${esc(x)}</div>`).join('');
   const slides = [...site.homeSlider, ...site.homeSlider];
   $('sliderTrack').innerHTML = slides.map(s => `<div class="slide-card"><img src="${esc(img(s))}" alt="Adventure Sports photo"></div>`).join('');
   const catImages = {
@@ -51,6 +60,7 @@ async function loadHome(){
 }
 async function loadEvents(){
   const [site, eventsData] = await Promise.all([getJSON('/content/site.json'), getJSON('/content/events.json')]);
+  renderFixedStatus(site);
   $('pageLogo').src = img(site.logo);
   const params = new URLSearchParams(location.search);
   let selected = params.get('category') || 'All';
@@ -60,11 +70,13 @@ async function loadEvents(){
 }
 async function loadGallery(){
   const [site, galleryData] = await Promise.all([getJSON('/content/site.json'), getJSON('/content/gallery.json')]);
+  renderFixedStatus(site);
   $('pageLogo').src = img(site.logo);
-  $('galleryGrid').innerHTML = galleryData.gallery.map(g => `<div class="card"><img style="width:100%;height:245px;object-fit:cover;border-radius:14px" src="${esc(img(g.image))}" alt="${esc(g.title)}"><h3>${esc(g.title)}</h3><p>${esc(g.caption || '')}</p></div>`).join('');
+  $('galleryGrid').innerHTML = galleryData.gallery.map(g => `<img src="${esc(img(g.image))}" alt="${esc(g.title || 'Gallery photo')}">`).join('');
 }
 async function loadClubhouse(){
   const [site, club] = await Promise.all([getJSON('/content/site.json'), getJSON('/content/clubhouse.json')]);
+  renderFixedStatus(site);
   $('pageLogo').src = img(site.logo);
   $('menuButton').href = club.menuUrl;
   $('clubIntro').textContent = club.intro;
@@ -73,6 +85,7 @@ async function loadClubhouse(){
 }
 async function loadRentals(){
   const [site, rentals] = await Promise.all([getJSON('/content/site.json'), getJSON('/content/rentals.json')]);
+  renderFixedStatus(site);
   $('pageLogo').src = img(site.logo);
   $('ratesList').innerHTML = rentals.rates.map(r => `<li>${esc(r)}</li>`).join('');
   if ($('typeDescriptions')) {
@@ -81,6 +94,7 @@ async function loadRentals(){
 }
 async function loadSafety(){
   const [site, safety] = await Promise.all([getJSON('/content/site.json'), getJSON('/content/safety.json')]);
+  renderFixedStatus(site);
   $('pageLogo').src = img(site.logo);
   $('waiverButton').href = safety.waiverUrl;
   $('safetyList').innerHTML = safety.safety.map(x=>`<p>${esc(x)}</p>`).join('');
