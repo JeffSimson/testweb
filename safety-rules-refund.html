@@ -1,10 +1,14 @@
 <!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Safety, Rules & Refund Policy | Adventure Sports</title><link rel="stylesheet" href="/style.css"><script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script></head><body onload="loadSafety()"><div class="page-nav">
 <nav class="top-nav">
+  <a class="nav-center-logo" href="/" title="Back to Home"><img src="/uploads/site/adventure-logo.png" alt="Adventure Sports and Entertainment"></a>
   <div class="wrap nav-inner">
     <div class="nav-group">
       <div class="dropdown nav-link"><a href="/#about">About ▾</a>
-        <div class="dropdown-menu">
-          <a href="/safety-rules-refund.html">Safety, Rules & Refund Policy</a>
+        <div class="dropdown-menu about-menu">
+          <a href="/#about">About Adventure Sports</a>
+          <a href="/safety-rules-refund.html#rules">Tournament & Facility Rules</a>
+          <a href="/safety-rules-refund.html#refund">Refund Policy</a>
+          <a href="/safety-rules-refund.html#waiver">Park Safety / Waiver</a>
         </div>
       </div>
       <div class="dropdown nav-link"><a href="/events.html">Events ▾</a>
@@ -27,4 +31,15 @@
     </div>
   </div>
 </nav>
-</div><section class="page-hero"><div class="wrap"><img id="pageLogo" class="hero-logo" alt="Adventure logo"><h1>Safety, Rules & Refund Policy</h1></div></section><section class="page-section"><div class="wrap"><div class="quick-buttons"><a class="btn red" id="waiverButton" target="_blank" rel="noopener">Sign Park Waiver</a></div><br><div class="two-grid"><div class="card"><h2>Safety First</h2><div id="safetyList"></div></div><div class="card"><h2>Park Rules</h2><ul class="rule-list" id="rulesList"></ul></div></div><br><div class="card"><h2>Team Insurance Requirements</h2><p id="insurance"></p><h2>Umpires</h2><p id="umpires"></p><h2>Equipment</h2><p id="equipment"></p></div><br><div class="card"><h2>Refund Policy</h2><ul id="refundSummary"></ul><p id="refundDetails"></p></div></div></section><script src="/app.js"></script></body></html>
+</div><section class="policy-hero" style="background-image:url('/uploads/home-slider/softball-player-smiling.jpg')"><div class="inner"><img id="pageLogo" class="hero-logo" alt="Adventure logo"><h1>Tournament Information<br>& Facility Rules</h1></div></section><div class="wave-bottom"></div><section class="page-section" id="rules"><div class="wrap">
+  <div class="rules-layout">
+    <div class="rules-map"><img src="/uploads/site/facility-map.jpg" alt="Adventure Sports facility map"></div>
+    <div class="rules-copy"><h2>Our Rules</h2><div id="rulesIntro"></div></div>
+  </div>
+</div></section>
+<section class="split-policy">
+  <div class="split-red"><h2>Park Rules</h2><ul id="rulesList"></ul></div>
+  <div class="split-blue"><h2>Team Requirements</h2><p id="insurance"></p><h2>Rosters</h2><p id="rosters"></p><h2>Umpires</h2><p id="umpires"></p><h2>Equipment</h2><p id="equipment"></p></div>
+</section>
+<section class="page-section" id="waiver"><div class="wrap"><div class="card"><h2>Park Safety / Waiver</h2><div id="safetyList"></div><a class="btn red" id="waiverButton" target="_blank" rel="noopener">Sign Park Waiver</a></div></div></section>
+<section class="page-section soft" id="refund"><div class="wrap"><div class="card refund-card"><h2>Refund Policy</h2><h3>Withdrawal, Cancellation & Refund Procedures for Adventure Sports events</h3><ul id="refundSummary"></ul><p id="refundDetails"></p></div></div></section><script src="/app.js"></script></body></html>

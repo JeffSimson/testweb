@@ -75,6 +75,9 @@ async function loadRentals(){
   const [site, rentals] = await Promise.all([getJSON('/content/site.json'), getJSON('/content/rentals.json')]);
   $('pageLogo').src = img(site.logo);
   $('ratesList').innerHTML = rentals.rates.map(r => `<li>${esc(r)}</li>`).join('');
+  if ($('typeDescriptions')) {
+    $('typeDescriptions').innerHTML = (rentals.requestTypes || []).map(t => `<div class="type-help-item"><b>${esc(t.name)}</b><br>${esc(t.description)}</div>`).join('');
+  }
 }
 async function loadSafety(){
   const [site, safety] = await Promise.all([getJSON('/content/site.json'), getJSON('/content/safety.json')]);
@@ -82,7 +85,9 @@ async function loadSafety(){
   $('waiverButton').href = safety.waiverUrl;
   $('safetyList').innerHTML = safety.safety.map(x=>`<p>${esc(x)}</p>`).join('');
   $('rulesList').innerHTML = safety.rules.map(x=>`<li>${esc(x)}</li>`).join('');
+  if ($('rulesIntro')) $('rulesIntro').innerHTML = (safety.rulesIntro || []).map(x=>`<p>${esc(x)}</p>`).join('');
   $('insurance').textContent = safety.insurance;
+  if ($('rosters')) $('rosters').textContent = safety.rosters || '';
   $('umpires').textContent = safety.umpires;
   $('equipment').textContent = safety.equipment;
   $('refundSummary').innerHTML = safety.refundSummary.map(x=>`<li>${esc(x)}</li>`).join('');

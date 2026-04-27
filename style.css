@@ -129,3 +129,35 @@ label{font-weight:800;color:#334;margin-bottom:4px;display:block}
   .resource-grid{grid-template-columns:repeat(2,1fr)}
   h1{font-size:38px}
 }
+
+
+/* v3 cleanup */
+.nav-center-logo{position:absolute;left:50%;top:6px;transform:translateX(-50%);z-index:25;display:block}
+.nav-center-logo img{width:112px;height:auto;filter:drop-shadow(0 5px 10px rgba(0,0,0,.45));transition:.2s ease}
+.nav-center-logo:hover img{transform:scale(1.04)}
+.dropdown-menu.about-menu{min-width:278px;padding:0;border-radius:0;border-top:3px solid var(--blue);box-shadow:0 12px 28px rgba(0,0,0,.22)}
+.dropdown-menu.about-menu a{border-radius:0;border-bottom:1px solid var(--blue2);padding:14px 20px;font-size:17px;font-weight:500}
+.dropdown-menu.about-menu a:last-child{border-bottom:3px solid #b00000}
+.dropdown-menu.about-menu a:hover{background:#f6f8ff;color:var(--blue)}
+.rental-rate-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin:22px 0}
+.rate-card{background:#fff;border:1px solid var(--line);border-radius:18px;box-shadow:var(--shadow);padding:22px}
+.rate-card strong{display:block;font-size:24px;color:var(--blue);margin-bottom:8px}
+.type-help{display:grid;gap:12px;margin-top:16px}
+.type-help-item{border:1px solid var(--line);border-radius:14px;padding:14px;background:#f8faff}
+.type-help-item b{color:var(--blue)}
+.policy-hero{min-height:440px;background-size:cover;background-position:center;position:relative;display:grid;place-items:center;text-align:center;color:#fff}
+.policy-hero:before{content:"";position:absolute;inset:0;background:rgba(0,0,0,.34)}
+.policy-hero .inner{position:relative;z-index:2}
+.policy-hero h1{font-size:clamp(38px,4vw,60px)}
+.wave-bottom{height:36px;background:radial-gradient(22px 16px at 20px 0, transparent 20px, white 21px) repeat-x;background-size:44px 36px;margin-top:-35px;position:relative;z-index:4}
+.rules-layout{display:grid;grid-template-columns:.9fr 1.1fr;gap:36px;align-items:start}
+.rules-map{border-radius:20px;box-shadow:var(--shadow);overflow:hidden}
+.rules-copy h2{font-size:42px;color:var(--text)}
+.split-policy{display:grid;grid-template-columns:1fr 1fr}
+.split-policy>div{padding:44px;color:#fff}
+.split-red{background:#bb5145}.split-blue{background:#4b5f9e}
+.split-policy h2{font-size:32px;margin-top:0}
+.split-policy p,.split-policy li{line-height:1.55;font-size:15px}
+.refund-card{max-width:980px;margin:0 auto;line-height:1.7;font-size:17px}
+.refund-card h2{color:var(--blue);font-size:36px}.refund-card p{white-space:pre-line}
+@media(max-width:900px){.nav-center-logo{position:relative;left:auto;top:auto;transform:none;order:-1}.nav-center-logo img{width:90px}.rental-rate-grid,.rules-layout,.split-policy{grid-template-columns:1fr}}

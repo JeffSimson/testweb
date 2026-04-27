@@ -9,40 +9,40 @@
   ],
   "events": [
     {
-      "register": "https://usssa.com/home/",
-      "price": "See registration page",
-      "logo": "/uploads/site/adventure-logo.png",
-      "featured": true,
-      "date": "April 24, 2026 • 12:00 am – April 26, 2026 • 11:59 pm EDT",
-      "location": "515 Monmouth Road, Building 210, Jackson, NJ",
       "title": "USSSA Adventure's Northeast Opener",
+      "category": "Baseball",
+      "date": "April 24, 2026 \u2022 12:00 am \u2013 April 26, 2026 \u2022 11:59 pm EDT",
+      "location": "515 Monmouth Road, Building 210, Jackson, NJ",
+      "price": "See registration page",
+      "register": "https://usssa.com/home/",
       "image": "/uploads/site/hero-aerial.jpg",
+      "logo": "/uploads/site/adventure-logo.png",
       "description": "Weekend baseball tournament at Adventure Sports and Entertainment. No seeds and gum. No metal cleats.",
-      "category": "Softball"
+      "featured": true
     },
     {
-      "register": "https://www.usabl.com/",
-      "price": "Varies by event",
-      "logo": "/uploads/site/adventure-logo.png",
-      "featured": true,
+      "title": "Softball Events",
+      "category": "Softball",
       "date": "View schedule for upcoming dates",
       "location": "Adventure Sports and Entertainment",
-      "title": "Softball Events",
+      "price": "Varies by event",
+      "register": "https://www.usabl.com/",
       "image": "/uploads/gallery/gallery-2.jpg",
+      "logo": "/uploads/site/adventure-logo.png",
       "description": "Softball events and tournaments hosted at the complex.",
-      "category": "Softball"
+      "featured": true
     },
     {
-      "register": "/private-rentals.html",
-      "price": "$50/hr – $125/hr depending on event",
-      "logo": "/uploads/site/adventure-logo.png",
-      "featured": true,
+      "title": "Private Rentals",
+      "category": "Private Rentals",
       "date": "Available by request",
       "location": "Outdoor fields, practice turf, batting cages, and clubhouse",
-      "title": "Private Rentals",
+      "price": "$50/hr \u2013 $125/hr depending on event",
+      "register": "/private-rentals.html",
       "image": "/uploads/site/facility-map.jpg",
+      "logo": "/uploads/site/adventure-logo.png",
       "description": "Request fields, cages, turf space, or clubhouse rentals for teams, practices, parties, and private events.",
-      "category": "Private Rentals"
+      "featured": true
     }
   ]
 }

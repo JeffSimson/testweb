@@ -130,6 +130,12 @@ collections:
             name: "emails"
             widget: "list"
             field: { label: "Email", name: "email", widget: "string" }
+          - label: "Request Types"
+            name: "requestTypes"
+            widget: "list"
+            fields:
+              - { label: "Name", name: "name", widget: "string" }
+              - { label: "Description", name: "description", widget: "text" }
 
       - label: "Safety / Rules / Refund"
         name: "safety"
@@ -141,11 +147,16 @@ collections:
             name: "safety"
             widget: "list"
             field: { label: "Paragraph", name: "paragraph", widget: "text" }
+          - label: "Rules Intro"
+            name: "rulesIntro"
+            widget: "list"
+            field: { label: "Paragraph", name: "paragraph", widget: "text" }
           - label: "Rules"
             name: "rules"
             widget: "list"
             field: { label: "Rule", name: "rule", widget: "string" }
           - { label: "Insurance", name: "insurance", widget: "text" }
+          - { label: "Rosters", name: "rosters", widget: "text", required: false }
           - { label: "Umpires", name: "umpires", widget: "text" }
           - { label: "Equipment", name: "equipment", widget: "text" }
           - label: "Refund Summary"
