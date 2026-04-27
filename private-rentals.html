@@ -1,10 +1,20 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Private Rentals | Adventure Sports</title><link rel="stylesheet" href="/style.css"><script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script></head><body onload="loadRentals()"><div class="page-nav">
+<!DOCTYPE html><html lang="en"><head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Private Rentals | Adventure Sports</title><link rel="stylesheet" href="/style.css">
+<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+</head><body onload="loadRentals()">
+<div class="site-status-fixed">
+  <div class="wrap status-inner">
+    <span class="status-pill">Field Status: <span id="fixedFieldStatus">OPEN</span></span>
+    <span id="fixedAnnouncement">Registration is now open for upcoming baseball and softball events.</span>
+  </div>
+</div>
 <nav class="top-nav">
   <a class="nav-center-logo" href="/" title="Back to Home"><img src="/uploads/site/adventure-logo.png" alt="Adventure Sports and Entertainment"></a>
   <div class="wrap nav-inner">
     <div class="nav-group">
       <div class="dropdown nav-link"><a href="/#about">About ▾</a>
-        <div class="dropdown-menu about-menu">
+        <div class="dropdown-menu">
           <a href="/#about">About Adventure Sports</a>
           <a href="/safety-rules-refund.html#rules">Tournament & Facility Rules</a>
           <a href="/safety-rules-refund.html#refund">Refund Policy</a>
@@ -27,29 +37,22 @@
       <a class="nav-link" href="/private-rentals.html">Private Rentals</a>
       <a class="nav-link" href="#">Discount Hotel</a>
       <a class="nav-link" href="/gallery.html">Gallery</a>
-      <a class="nav-link" href="/#contact">Contact</a>
+      <a class="nav-link" href="/contact.html">Contact</a>
     </div>
   </div>
 </nav>
-</div><section class="page-hero"><div class="wrap"><img id="pageLogo" class="hero-logo" alt="Adventure logo"><h1>Private Rentals</h1></div></section><section class="page-section"><div class="wrap">
-  <div class="section-head">
-    <h2>Outdoor Field Rental Rates</h2>
-    <p>Request fields, batting cages, or clubhouse space for practices, games, training, parties, and private events.</p>
-  </div>
+<div class="page-spacer"></div>
+<section class="page-hero"><div class="wrap"><img id="pageLogo" class="hero-logo" alt="Adventure logo"><h1>Private Rentals</h1></div></section>
+<section class="page-section"><div class="wrap">
+  <div class="section-head"><h2>Outdoor Field Rental Rates</h2><p>Request fields, batting cages, or clubhouse space for practices, games, training, parties, and private events.</p></div>
   <div class="rental-rate-grid">
     <div class="rate-card"><strong>$50–$125/hr</strong><p>Outdoor field rates vary depending on the event. Please contact us for more information.</p></div>
     <div class="rate-card"><strong>$60/hr</strong><p>Turf area rental for training and practice use.</p></div>
     <div class="rate-card"><strong>$35/hr</strong><p>Batting cage rental per cage.</p></div>
   </div>
   <div class="two-grid">
-    <div class="card">
-      <h2>Request Types</h2>
-      <p>Choose the option that best matches what you need. For full-complex rentals or large events, choose <b>Other</b> and explain the request.</p>
-      <div class="type-help" id="typeDescriptions"></div>
-    </div>
-    <div class="card">
-      <h2>Rental Request Form</h2>
-      <p>Please fill out the form below with your requested date and time. Our team will review it and follow up.</p>
+    <div class="card"><h2>Request Types</h2><p>Choose the option that best matches what you need. For full-complex rentals or large events, choose <b>Other</b> and explain the request.</p><div class="type-help" id="typeDescriptions"></div></div>
+    <div class="card"><h2>Rental Request Form</h2><p>Please fill out the form below with your requested date and time. Our team will review it and follow up.</p>
       <form name="private-rental-request" method="POST" data-netlify="true" action="/thank-you.html">
         <input type="hidden" name="form-name" value="private-rental-request">
         <div class="form-grid">
@@ -69,4 +72,6 @@
       </form>
     </div>
   </div>
-</div></section><script src="/app.js"></script></body></html>
+</div></section>
+<script src="/app.js"></script>
+</body></html>

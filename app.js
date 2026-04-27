@@ -3,13 +3,10 @@ const $ = (id) => document.getElementById(id);
 const esc = (s="") => String(s).replace(/[&<>"']/g, m => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#039;'}[m]));
 const img = (s="") => !s ? "" : (s.startsWith("/") || s.startsWith("http") ? s : "/" + s);
 async function getJSON(path){ const r = await fetch(path+"?v="+Date.now()); if(!r.ok) throw new Error(path); return r.json(); }
-
 function renderFixedStatus(site){
   if ($('fixedFieldStatus')) $('fixedFieldStatus').textContent = site.fieldStatus || 'OPEN';
   if ($('fixedAnnouncement')) $('fixedAnnouncement').textContent = site.announcement || '';
 }
-
-
 async function loadHome(){
   const [site, eventsData, resData] = await Promise.all([getJSON('/content/site.json'), getJSON('/content/events.json'), getJSON('/content/resources.json')]);
   renderFixedStatus(site);
@@ -17,8 +14,6 @@ async function loadHome(){
   $('homeHero').style.backgroundImage = `linear-gradient(rgba(0,0,0,.25),rgba(0,0,0,.35)), url('${img(site.heroImage)}')`;
   $('heroTitle').textContent = site.headline;
   $('heroCta').textContent = site.heroButtonText;
-  $('fieldStatus').textContent = site.fieldStatus;
-  $('announcement').textContent = site.announcement;
   $('aboutTitle').textContent = site.legalName;
   $('aboutText').textContent = site.about;
   $('facebookLink').href = site.facebook;
@@ -27,10 +22,10 @@ async function loadHome(){
   $('menuQuick').href = site.menuUrl;
   $('rentalQuick').href = '/private-rentals.html';
   $('eventsQuick').href = '/events.html';
-  if ($('facilityHighlights')) $('facilityHighlights').innerHTML = (site.facilityHighlights || []).map(x => `<div class="info-mini-card"><h3>${esc(x.title)}</h3><p>${esc(x.text)}</p></div>`).join('');
-  if ($('planVisit')) $('planVisit').innerHTML = (site.planVisit || []).map(x => `<div class="visit-item">${esc(x)}</div>`).join('');
-  if ($('whyChoose')) $('whyChoose').innerHTML = (site.whyChoose || []).map(x => `<div class="why-card">${esc(x)}</div>`).join('');
-  const slides = [...site.homeSlider, ...site.homeSlider];
+  $('facilityHighlights').innerHTML = (site.facilityHighlights || []).map(x => `<div class="info-mini-card"><h3>${esc(x.title)}</h3><p>${esc(x.text)}</p></div>`).join('');
+  $('planVisit').innerHTML = (site.planVisit || []).map(x => `<div class="visit-item">${esc(x)}</div>`).join('');
+  $('whyChoose').innerHTML = (site.whyChoose || []).map(x => `<div class="why-card">${esc(x)}</div>`).join('');
+  const slides = [...(site.homeSlider || []), ...(site.homeSlider || [])];
   $('sliderTrack').innerHTML = slides.map(s => `<div class="slide-card"><img src="${esc(img(s))}" alt="Adventure Sports photo"></div>`).join('');
   const catImages = {
     "Baseball": "/uploads/gallery/gallery-10.jpg",
@@ -60,8 +55,7 @@ async function loadHome(){
 }
 async function loadEvents(){
   const [site, eventsData] = await Promise.all([getJSON('/content/site.json'), getJSON('/content/events.json')]);
-  renderFixedStatus(site);
-  $('pageLogo').src = img(site.logo);
+  renderFixedStatus(site); $('pageLogo').src = img(site.logo);
   const params = new URLSearchParams(location.search);
   let selected = params.get('category') || 'All';
   const events = selected === 'All' ? eventsData.events : eventsData.events.filter(e => e.category === selected);
@@ -70,14 +64,12 @@ async function loadEvents(){
 }
 async function loadGallery(){
   const [site, galleryData] = await Promise.all([getJSON('/content/site.json'), getJSON('/content/gallery.json')]);
-  renderFixedStatus(site);
-  $('pageLogo').src = img(site.logo);
+  renderFixedStatus(site); $('pageLogo').src = img(site.logo);
   $('galleryGrid').innerHTML = galleryData.gallery.map(g => `<img src="${esc(img(g.image))}" alt="${esc(g.title || 'Gallery photo')}">`).join('');
 }
 async function loadClubhouse(){
   const [site, club] = await Promise.all([getJSON('/content/site.json'), getJSON('/content/clubhouse.json')]);
-  renderFixedStatus(site);
-  $('pageLogo').src = img(site.logo);
+  renderFixedStatus(site); $('pageLogo').src = img(site.logo);
   $('menuButton').href = club.menuUrl;
   $('clubIntro').textContent = club.intro;
   $('clubTagline').textContent = club.tagline;
@@ -85,25 +77,31 @@ async function loadClubhouse(){
 }
 async function loadRentals(){
   const [site, rentals] = await Promise.all([getJSON('/content/site.json'), getJSON('/content/rentals.json')]);
-  renderFixedStatus(site);
-  $('pageLogo').src = img(site.logo);
+  renderFixedStatus(site); $('pageLogo').src = img(site.logo);
   $('ratesList').innerHTML = rentals.rates.map(r => `<li>${esc(r)}</li>`).join('');
-  if ($('typeDescriptions')) {
-    $('typeDescriptions').innerHTML = (rentals.requestTypes || []).map(t => `<div class="type-help-item"><b>${esc(t.name)}</b><br>${esc(t.description)}</div>`).join('');
-  }
+  $('typeDescriptions').innerHTML = (rentals.requestTypes || []).map(t => `<div class="type-help-item"><b>${esc(t.name)}</b><br>${esc(t.description)}</div>`).join('');
 }
 async function loadSafety(){
   const [site, safety] = await Promise.all([getJSON('/content/site.json'), getJSON('/content/safety.json')]);
-  renderFixedStatus(site);
-  $('pageLogo').src = img(site.logo);
+  renderFixedStatus(site); $('pageLogo').src = img(site.logo);
   $('waiverButton').href = safety.waiverUrl;
   $('safetyList').innerHTML = safety.safety.map(x=>`<p>${esc(x)}</p>`).join('');
+  $('rulesIntro').innerHTML = (safety.rulesIntro || []).map(x=>`<p>${esc(x)}</p>`).join('');
   $('rulesList').innerHTML = safety.rules.map(x=>`<li>${esc(x)}</li>`).join('');
-  if ($('rulesIntro')) $('rulesIntro').innerHTML = (safety.rulesIntro || []).map(x=>`<p>${esc(x)}</p>`).join('');
   $('insurance').textContent = safety.insurance;
-  if ($('rosters')) $('rosters').textContent = safety.rosters || '';
+  $('rosters').textContent = safety.rosters || '';
   $('umpires').textContent = safety.umpires;
   $('equipment').textContent = safety.equipment;
   $('refundSummary').innerHTML = safety.refundSummary.map(x=>`<li>${esc(x)}</li>`).join('');
   $('refundDetails').textContent = safety.refundDetails;
+}
+async function loadContact(){
+  const site = await getJSON('/content/site.json');
+  renderFixedStatus(site); $('pageLogo').src = img(site.logo);
+  $('contactAddress').innerHTML = `<b>${esc(site.name)}</b><br>${esc(site.shortAddress)}<br>${esc(site.cityStateZip)}`;
+  $('contactPhone').textContent = site.phone;
+  $('contactPhone').href = 'tel:' + site.phone.replace(/\D/g,'');
+  $('contactEmail').textContent = site.email;
+  $('contactEmail').href = 'mailto:' + site.email;
+  $('contactHours').textContent = site.hours;
 }

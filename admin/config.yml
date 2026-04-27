@@ -41,6 +41,20 @@ collections:
           - { label: "Discount Hotel Link", name: "discountHotelUrl", widget: "string", required: false }
           - { label: "Video Streams Link", name: "videoStreamsUrl", widget: "string", required: false }
           - { label: "Facility Map", name: "facilityMap", widget: "image" }
+          - label: "Facility Highlights"
+            name: "facilityHighlights"
+            widget: "list"
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Text", name: "text", widget: "text" }
+          - label: "Plan Your Visit"
+            name: "planVisit"
+            widget: "list"
+            field: { label: "Item", name: "item", widget: "string" }
+          - label: "Why Choose Adventure"
+            name: "whyChoose"
+            widget: "list"
+            field: { label: "Reason", name: "reason", widget: "string" }
           - label: "Homepage Slider Photos"
             name: "homeSlider"
             widget: "list"

@@ -32,5 +32,47 @@
     "/uploads/home-slider/easter-bunny.jpg",
     "/uploads/home-slider/flag-player-pink.jpg",
     "/uploads/home-slider/usa-softball-pitcher.jpg"
-  ]
+  ],
+  "facilityHighlights": [
+    {
+      "title": "All-Turf Facility",
+      "text": "A clean, all-turf complex built for tournaments, showcases, rentals, practices, and game-day events."
+    },
+    {
+      "title": "Lighted Fields",
+      "text": "Field lighting supports evening games, practices, tournaments, and private events."
+    },
+    {
+      "title": "Batting Cages",
+      "text": "Cages are available for warmups, hitting practice, lessons, and team training."
+    },
+    {
+      "title": "Clubhouse Restaurant",
+      "text": "Enjoy food, drinks, seating, and clubhouse space during your visit."
+    },
+    {
+      "title": "Covered Dugouts",
+      "text": "Teams have covered dugouts and field amenities throughout the complex."
+    },
+    {
+      "title": "Observation Decks",
+      "text": "Great viewing areas for families, coaches, and spectators."
+    }
+  ],
+  "planVisit": [
+    "Free on-site parking is available.",
+    "Overflow parking is available near the dome.",
+    "Kitchen closes at 9:00 PM.",
+    "Sign the park waiver before visiting.",
+    "No metal cleats.",
+    "No seeds, gum, tobacco, or pets.",
+    "No outside food or drink, except allowed team cooler rules."
+  ],
+  "whyChoose": [
+    "Premier sports destination in Jackson, New Jersey.",
+    "Great for tournaments, rentals, camps, showcases, and private events.",
+    "Built for teams, families, coaches, athletes, and spectators.",
+    "Food, seating, clubhouse access, viewing areas, and field amenities in one location."
+  ],
+  "contactTitle": "Contact Us"
 }

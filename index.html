@@ -3,14 +3,18 @@
 <title>Adventure Sports and Entertainment</title><link rel="stylesheet" href="/style.css">
 <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 </head><body onload="loadHome()">
-<header class="hero" id="homeHero">
-
+<div class="site-status-fixed">
+  <div class="wrap status-inner">
+    <span class="status-pill">Field Status: <span id="fixedFieldStatus">OPEN</span></span>
+    <span id="fixedAnnouncement">Registration is now open for upcoming baseball and softball events.</span>
+  </div>
+</div>
 <nav class="top-nav">
   <a class="nav-center-logo" href="/" title="Back to Home"><img src="/uploads/site/adventure-logo.png" alt="Adventure Sports and Entertainment"></a>
   <div class="wrap nav-inner">
     <div class="nav-group">
       <div class="dropdown nav-link"><a href="/#about">About ▾</a>
-        <div class="dropdown-menu about-menu">
+        <div class="dropdown-menu">
           <a href="/#about">About Adventure Sports</a>
           <a href="/safety-rules-refund.html#rules">Tournament & Facility Rules</a>
           <a href="/safety-rules-refund.html#refund">Refund Policy</a>
@@ -33,22 +37,19 @@
       <a class="nav-link" href="/private-rentals.html">Private Rentals</a>
       <a class="nav-link" href="#">Discount Hotel</a>
       <a class="nav-link" href="/gallery.html">Gallery</a>
-      <a class="nav-link" href="/#contact">Contact</a>
+      <a class="nav-link" href="/contact.html">Contact</a>
     </div>
   </div>
 </nav>
-
-<div class="hero-content">
-  <img class="hero-logo" id="heroLogo" alt="Adventure Sports and Entertainment logo">
-  <h1 id="heroTitle">A Premier Sporting Destination</h1>
-  <div class="slider-window"><div class="slider-track" id="sliderTrack"></div></div>
-  <a class="hero-cta" id="heroCta" href="/events.html?category=Baseball">Register for Baseball & Softball</a>
-  <a href="#about" class="down-arrow">↓</a>
-</div>
-<div class="clouds"><div class="cloud c1"></div><div class="cloud c2"></div><div class="cloud c3"></div><div class="cloud c4"></div><div class="cloud c5"></div><div class="cloud c6"></div><div class="cloud c7"></div><div class="cloud c8"></div><div class="cloud-base"></div></div>
+<header class="hero" id="homeHero">
+  <div class="hero-content">
+    <h1 id="heroTitle">A Premier Sporting Destination</h1>
+    <div class="slider-window"><div class="slider-track" id="sliderTrack"></div></div>
+    <a class="hero-cta" id="heroCta" href="/events.html?category=Baseball">Register for Baseball & Softball</a>
+    <a href="#about" class="down-arrow">↓</a>
+  </div>
+  <div class="clouds"><div class="cloud c1"></div><div class="cloud c2"></div><div class="cloud c3"></div><div class="cloud c4"></div><div class="cloud c5"></div><div class="cloud c6"></div><div class="cloud c7"></div><div class="cloud c8"></div><div class="cloud-base"></div></div>
 </header>
-
-<section class="status-bar"><div class="wrap status-inner"><span class="status-pill">Field Status: <span id="fieldStatus">OPEN</span></span><span id="announcement"></span></div></section>
 
 <section class="section" id="about"><div class="wrap about-card">
   <h2 id="aboutTitle">Adventure Sports & Entertainment LLC</h2><div class="divider"></div>
@@ -63,6 +64,21 @@
     <a class="btn" id="rentalQuick">Request Rental</a>
     <a class="btn" id="eventsQuick">View Events</a>
   </div>
+</div></section>
+
+<section class="section soft" id="facility-highlights"><div class="wrap">
+  <div class="section-head"><h2>Facility Highlights</h2><p>Adventure Sports and Entertainment is built for athletes, families, spectators, and event organizers.</p></div>
+  <div class="info-card-grid" id="facilityHighlights"></div>
+</div></section>
+
+<section class="section" id="plan-your-visit"><div class="wrap">
+  <div class="section-head"><h2>Plan Your Visit</h2><p>Quick information to know before arriving at the complex.</p></div>
+  <div class="visit-list" id="planVisit"></div>
+</div></section>
+
+<section class="section blue" id="why-adventure"><div class="wrap">
+  <div class="section-head"><h2>Why Choose Adventure</h2><p>Designed for tournaments, training, rentals, camps, and unforgettable game-day experiences.</p></div>
+  <div class="why-grid" id="whyChoose"></div>
 </div></section>
 
 <section class="section compact"><div class="wrap">
@@ -92,7 +108,7 @@
   <div class="resource-grid" id="resourcesGrid"></div>
 </div></section>
 
-<section class="footer-social"><a id="footerFacebook" href="https://www.facebook.com/AdventureSportsAndEntertainment" target="_blank" rel="noopener">f &nbsp; Follow Us On Facebook</a></section>
+<section class="footer-social"><a href="https://www.facebook.com/AdventureSportsAndEntertainment" target="_blank" rel="noopener">f &nbsp; Follow Us On Facebook</a></section>
 <footer class="footer-main"><div class="wrap footer-grid">
   <div><h2>Location</h2><p><b id="footerName"></b><br><span id="footerAddress"></span></p><p><a id="footerPhone"></a><br><a id="footerEmail"></a><br><span id="footerHours"></span></p></div>
   <div style="text-align:center"><a href="/events.html">Events</a><br><br><a href="/private-rentals.html">Private Rentals</a><br><br><a href="/safety-rules-refund.html">Safety & Rules</a></div>

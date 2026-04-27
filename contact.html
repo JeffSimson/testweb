@@ -1,8 +1,8 @@
 <!DOCTYPE html><html lang="en"><head>
 <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Gallery | Adventure Sports</title><link rel="stylesheet" href="/style.css">
+<title>Contact Us | Adventure Sports</title><link rel="stylesheet" href="/style.css">
 <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
-</head><body onload="loadGallery()">
+</head><body onload="loadContact()">
 <div class="site-status-fixed">
   <div class="wrap status-inner">
     <span class="status-pill">Field Status: <span id="fixedFieldStatus">OPEN</span></span>
@@ -42,7 +42,30 @@
   </div>
 </nav>
 <div class="page-spacer"></div>
-<section class="page-hero"><div class="wrap"><img id="pageLogo" class="hero-logo" alt="Adventure logo"><h1>Gallery</h1></div></section>
-<section class="page-section"><div class="wrap"><div class="section-head"><h2>Gallery</h2><p>Photos from Adventure Sports and Entertainment.</p></div><div class="gallery-photos-only" id="galleryGrid"></div></div></section>
+<section class="page-hero"><div class="wrap"><img id="pageLogo" class="hero-logo" alt="Adventure logo"><h1>Contact Us</h1></div></section>
+<section class="page-section"><div class="wrap">
+  <div class="contact-grid">
+    <div class="card contact-card">
+      <h3>Location</h3>
+      <p id="contactAddress"></p>
+      <p><b>Phone:</b> <a id="contactPhone"></a></p>
+      <p><b>Email:</b> <a id="contactEmail"></a></p>
+      <p><b>Our Hours:</b><br><span id="contactHours"></span></p>
+    </div>
+    <div class="card contact-card">
+      <h3>Send Us a Note</h3>
+      <form name="contact-us" method="POST" data-netlify="true" action="/thank-you.html">
+        <input type="hidden" name="form-name" value="contact-us">
+        <div class="form-grid">
+          <div class="form-field"><label>Name</label><input name="name" required></div>
+          <div class="form-field"><label>Email</label><input name="email" type="email" required></div>
+          <div class="form-field full"><label>Phone</label><input name="phone"></div>
+          <div class="form-field full"><label>Message</label><textarea name="message" required></textarea></div>
+          <div class="full"><button class="btn red" type="submit">Send Message</button></div>
+        </div>
+      </form>
+    </div>
+  </div>
+</div></section>
 <script src="/app.js"></script>
 </body></html>
