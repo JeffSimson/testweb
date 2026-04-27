@@ -1,0 +1,48 @@
+{
+  "categories": [
+    "Baseball",
+    "Softball",
+    "Flag Football",
+    "Private Rentals",
+    "Camps",
+    "Tournaments"
+  ],
+  "events": [
+    {
+      "title": "USSSA Adventure's Northeast Opener",
+      "category": "Baseball",
+      "date": "April 24, 2026 \u2022 12:00 am \u2013 April 26, 2026 \u2022 11:59 pm EDT",
+      "location": "515 Monmouth Road, Building 210, Jackson, NJ",
+      "price": "See registration page",
+      "register": "https://usssa.com/home/",
+      "image": "/uploads/site/hero-aerial.jpg",
+      "logo": "/uploads/site/adventure-logo.png",
+      "description": "Weekend baseball tournament at Adventure Sports and Entertainment. No seeds and gum. No metal cleats.",
+      "featured": true
+    },
+    {
+      "title": "Softball Events",
+      "category": "Softball",
+      "date": "View schedule for upcoming dates",
+      "location": "Adventure Sports and Entertainment",
+      "price": "Varies by event",
+      "register": "https://www.usabl.com/",
+      "image": "/uploads/gallery/gallery-2.jpg",
+      "logo": "/uploads/site/adventure-logo.png",
+      "description": "Softball events and tournaments hosted at the complex.",
+      "featured": true
+    },
+    {
+      "title": "Private Rentals",
+      "category": "Private Rentals",
+      "date": "Available by request",
+      "location": "Outdoor fields, practice turf, batting cages, and clubhouse",
+      "price": "$50/hr \u2013 $125/hr depending on event",
+      "register": "/private-rentals.html",
+      "image": "/uploads/site/facility-map.jpg",
+      "logo": "/uploads/site/adventure-logo.png",
+      "description": "Request fields, cages, turf space, or clubhouse rentals for teams, practices, parties, and private events.",
+      "featured": true
+    }
+  ]
+}
