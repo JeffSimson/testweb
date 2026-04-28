@@ -37,3 +37,9 @@ How to use:
 6. Commit changes and Netlify will redeploy
 
 This page is not linked on the public website.
+
+# GitHub-safe version
+
+This version compresses large images so GitHub's browser uploader is less likely to fail.
+
+Upload the extracted contents, not the ZIP itself.
