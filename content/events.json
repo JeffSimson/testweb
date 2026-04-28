@@ -174,21 +174,6 @@
       "directRegister": true
     },
     {
-      "title": "Adventure\u2019s Swingo de Mayo Softball Tournament",
-      "category": "Softball",
-      "date": "May 2 - May 3, 2026",
-      "location": "515 Monmouth Road, Building 210, Jackson, NJ",
-      "price": "See registration page",
-      "register": "https://njfastpitch.usssa.com/events/",
-      "image": "/uploads/event-logos/adventure-turf-complex.webp",
-      "logo": "/uploads/event-logos/adventure-turf-complex.webp",
-      "description": "Softball tournament at Adventure Sports and Entertainment.",
-      "featured": false,
-      "startDate": "2026-05-02",
-      "endDate": "2026-05-03",
-      "directRegister": true
-    },
-    {
       "title": "Adventure\u2019s Run for the Roses Softball Tournament",
       "category": "Softball",
       "date": "May 8 - May 10, 2026",
@@ -215,6 +200,21 @@
       "description": "Baseball tournament at Adventure Sports and Entertainment.",
       "featured": false,
       "startDate": "2026-05-15",
+      "endDate": "2026-05-17",
+      "directRegister": true
+    },
+    {
+      "title": "Adventure\u2019s Blossom Bash Softball Tournament",
+      "category": "Softball",
+      "date": "May 16 - May 17, 2026",
+      "location": "515 Monmouth Road, Building 210, Jackson, NJ",
+      "price": "See registration page",
+      "register": "https://adventuresportsandentertainment.com/event/adventures-blossom-bash-softball-tournament/",
+      "image": "/uploads/event-logos/adventure-turf-complex.webp",
+      "logo": "/uploads/event-logos/adventure-turf-complex.webp",
+      "description": "Softball tournament at Adventure Sports and Entertainment.",
+      "featured": false,
+      "startDate": "2026-05-16",
       "endDate": "2026-05-17",
       "directRegister": true
     },
