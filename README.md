@@ -43,3 +43,12 @@ This page is not linked on the public website.
 This version compresses large images so GitHub's browser uploader is less likely to fail.
 
 Upload the extracted contents, not the ZIP itself.
+
+
+## Upcoming/Past Events
+
+Events now use `startDate` and `endDate` in `content/events.json`.
+
+- `/events.html` shows today and future events only.
+- `/events.html?past=1` shows past events.
+- Homepage featured events also only shows upcoming events.

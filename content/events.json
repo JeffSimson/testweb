@@ -14,11 +14,14 @@
       "date": "March 20 - March 22, 2026",
       "location": "515 Monmouth Road, Building 210, Jackson, NJ",
       "price": "See registration page",
-      "register": "https://adventuresportsandentertainment.com/event/usabl-adventure-spring-blast/",
+      "register": "https://play.usabl.com/events/ASspringblastelite26",
       "image": "/uploads/event-logos/spring-blast.webp",
       "logo": "/uploads/event-logos/spring-blast.webp",
       "description": "Baseball tournament at Adventure Sports and Entertainment.",
-      "featured": true
+      "featured": true,
+      "startDate": "2026-03-20",
+      "endDate": "2026-03-22",
+      "directRegister": true
     },
     {
       "title": "Adventure\u2019s March to Victory One Day Softball Tournament",
@@ -26,11 +29,14 @@
       "date": "March 21 - March 22, 2026",
       "location": "515 Monmouth Road, Building 210, Jackson, NJ",
       "price": "See registration page",
-      "register": "https://adventuresportsandentertainment.com/event/adventures-march-to-victory-one-day-softball-tournament/",
+      "register": "https://www.usssa.com/fastpitch/event_home/?eventID=410706",
       "image": "/uploads/event-logos/march-to-victory.webp",
       "logo": "/uploads/event-logos/march-to-victory.webp",
       "description": "Softball tournament at Adventure Sports and Entertainment.",
-      "featured": true
+      "featured": true,
+      "startDate": "2026-03-21",
+      "endDate": "2026-03-22",
+      "directRegister": true
     },
     {
       "title": "USABL Adventure Spring Fling",
@@ -38,11 +44,14 @@
       "date": "March 27 - March 29, 2026",
       "location": "515 Monmouth Road, Building 210, Jackson, NJ",
       "price": "See registration page",
-      "register": "https://adventuresportsandentertainment.com/event/usabl-adventure-spring-fling/",
+      "register": "https://play.usabl.com/events/ASspringfling2026",
       "image": "/uploads/event-logos/spring-fling.webp",
       "logo": "/uploads/event-logos/spring-fling.webp",
       "description": "Baseball tournament at Adventure Sports and Entertainment.",
-      "featured": true
+      "featured": true,
+      "startDate": "2026-03-27",
+      "endDate": "2026-03-29",
+      "directRegister": true
     },
     {
       "title": "USABL Adventure Easter Battle",
@@ -50,11 +59,14 @@
       "date": "April 3 - April 4, 2026",
       "location": "515 Monmouth Road, Building 210, Jackson, NJ",
       "price": "See registration page",
-      "register": "https://adventuresportsandentertainment.com/event/usabl-adventure-easter-battle/",
+      "register": "https://play.usabl.com/events/ASeasterbattle2026",
       "image": "/uploads/event-logos/easter-battle.webp",
       "logo": "/uploads/event-logos/easter-battle.webp",
       "description": "Baseball tournament at Adventure Sports and Entertainment.",
-      "featured": false
+      "featured": false,
+      "startDate": "2026-04-03",
+      "endDate": "2026-04-04",
+      "directRegister": true
     },
     {
       "title": "Adventure\u2019s Annual Bunny Hop One Day Softball Tournament",
@@ -66,7 +78,10 @@
       "image": "/uploads/event-logos/bunny-hop.png",
       "logo": "/uploads/event-logos/bunny-hop.png",
       "description": "Softball tournament at Adventure Sports and Entertainment.",
-      "featured": false
+      "featured": false,
+      "startDate": "2026-04-04",
+      "endDate": "2026-04-04",
+      "directRegister": false
     },
     {
       "title": "USABL Adventure Grand Slam Invitational",
@@ -74,11 +89,14 @@
       "date": "April 10 - April 12, 2026",
       "location": "515 Monmouth Road, Building 210, Jackson, NJ",
       "price": "See registration page",
-      "register": "https://adventuresportsandentertainment.com/event/usabl-adventure-grand-slam-invitational/",
+      "register": "https://play.usabl.com/events/ASGS2026",
       "image": "/uploads/event-logos/grand-slam.webp",
       "logo": "/uploads/event-logos/grand-slam.webp",
       "description": "Baseball tournament at Adventure Sports and Entertainment.",
-      "featured": false
+      "featured": false,
+      "startDate": "2026-04-10",
+      "endDate": "2026-04-12",
+      "directRegister": true
     },
     {
       "title": "Adventure\u2019s Fools\u2019 Gold One Day Softball Tournament",
@@ -90,7 +108,10 @@
       "image": "/uploads/event-logos/adventure-turf-complex.webp",
       "logo": "/uploads/event-logos/adventure-turf-complex.webp",
       "description": "Softball tournament at Adventure Sports and Entertainment.",
-      "featured": false
+      "featured": false,
+      "startDate": "2026-04-11",
+      "endDate": "2026-04-11",
+      "directRegister": false
     },
     {
       "title": "USABL Adventure Triple Crown Classic",
@@ -98,11 +119,14 @@
       "date": "April 17 - April 19, 2026",
       "location": "515 Monmouth Road, Building 210, Jackson, NJ",
       "price": "See registration page",
-      "register": "https://adventuresportsandentertainment.com/event/usabl-adventure-triple-crown-classic/",
+      "register": "https://play.usabl.com/events/ASTripleCrownClassic26",
       "image": "/uploads/event-logos/triple-crown.webp",
       "logo": "/uploads/event-logos/triple-crown.webp",
       "description": "Baseball tournament at Adventure Sports and Entertainment.",
-      "featured": false
+      "featured": false,
+      "startDate": "2026-04-17",
+      "endDate": "2026-04-19",
+      "directRegister": true
     },
     {
       "title": "Ocean County and Monmouth County Softball Tournaments",
@@ -114,7 +138,10 @@
       "image": "/uploads/event-logos/softball-generic.jpg",
       "logo": "/uploads/event-logos/softball-generic.jpg",
       "description": "Softball tournament at Adventure Sports and Entertainment.",
-      "featured": false
+      "featured": false,
+      "startDate": "2026-04-18",
+      "endDate": "2026-04-19",
+      "directRegister": false
     },
     {
       "title": "Northeast Opener Softball Tournament",
@@ -126,7 +153,10 @@
       "image": "/uploads/event-logos/ne-opener.webp",
       "logo": "/uploads/event-logos/ne-opener.webp",
       "description": "Softball tournament at Adventure Sports and Entertainment.",
-      "featured": false
+      "featured": false,
+      "startDate": "2026-04-26",
+      "endDate": "2026-04-26",
+      "directRegister": false
     },
     {
       "title": "USABL Adventure Cinco de Mayo Slam",
@@ -134,11 +164,14 @@
       "date": "May 1 - May 3, 2026",
       "location": "515 Monmouth Road, Building 210, Jackson, NJ",
       "price": "See registration page",
-      "register": "https://adventuresportsandentertainment.com/event/usabl-adventure-cinco-de-mayo-slam/",
+      "register": "https://play.usabl.com/events/AScincodemayo2026",
       "image": "/uploads/event-logos/cinco-de-mayo.webp",
       "logo": "/uploads/event-logos/cinco-de-mayo.webp",
       "description": "Baseball tournament at Adventure Sports and Entertainment.",
-      "featured": false
+      "featured": false,
+      "startDate": "2026-05-01",
+      "endDate": "2026-05-03",
+      "directRegister": true
     },
     {
       "title": "Adventure\u2019s Swingo de Mayo Softball Tournament",
@@ -150,7 +183,10 @@
       "image": "/uploads/event-logos/adventure-turf-complex.webp",
       "logo": "/uploads/event-logos/adventure-turf-complex.webp",
       "description": "Softball tournament at Adventure Sports and Entertainment.",
-      "featured": false
+      "featured": false,
+      "startDate": "2026-05-02",
+      "endDate": "2026-05-03",
+      "directRegister": false
     },
     {
       "title": "Adventure\u2019s Run for the Roses Softball Tournament",
@@ -162,7 +198,10 @@
       "image": "/uploads/event-logos/run-for-roses.webp",
       "logo": "/uploads/event-logos/run-for-roses.webp",
       "description": "Softball tournament at Adventure Sports and Entertainment.",
-      "featured": false
+      "featured": false,
+      "startDate": "2026-05-08",
+      "endDate": "2026-05-10",
+      "directRegister": false
     },
     {
       "title": "USABL Adventure May Slugfest",
@@ -170,11 +209,14 @@
       "date": "May 15 - May 17, 2026",
       "location": "515 Monmouth Road, Building 210, Jackson, NJ",
       "price": "See registration page",
-      "register": "https://adventuresportsandentertainment.com/event/usabl-adventure-may-slugfest/",
+      "register": "https://play.usabl.com/events/ASmayslugfest2026",
       "image": "/uploads/event-logos/may-slugfest.webp",
       "logo": "/uploads/event-logos/may-slugfest.webp",
       "description": "Baseball tournament at Adventure Sports and Entertainment.",
-      "featured": false
+      "featured": false,
+      "startDate": "2026-05-15",
+      "endDate": "2026-05-17",
+      "directRegister": true
     },
     {
       "title": "PGF Memorial Day Weekend Softball Tournament",
@@ -186,7 +228,10 @@
       "image": "/uploads/event-logos/pgf-qualifier.jpg",
       "logo": "/uploads/event-logos/pgf-qualifier.jpg",
       "description": "Softball tournament at Adventure Sports and Entertainment.",
-      "featured": false
+      "featured": false,
+      "startDate": "2026-05-22",
+      "endDate": "2026-05-25",
+      "directRegister": false
     },
     {
       "title": "USABL Adventure Moonshot Madness",
@@ -194,11 +239,14 @@
       "date": "May 29 - May 31, 2026",
       "location": "515 Monmouth Road, Building 210, Jackson, NJ",
       "price": "See registration page",
-      "register": "https://adventuresportsandentertainment.com/event/usabl-adventure-moonshot-madness/",
+      "register": "https://play.usabl.com/events/ASMoonshot2026",
       "image": "/uploads/event-logos/moonshot-madness.webp",
       "logo": "/uploads/event-logos/moonshot-madness.webp",
       "description": "Baseball tournament at Adventure Sports and Entertainment.",
-      "featured": false
+      "featured": false,
+      "startDate": "2026-05-29",
+      "endDate": "2026-05-31",
+      "directRegister": true
     },
     {
       "title": "Utlaws 12u Showdown Under the Lights",
@@ -210,7 +258,10 @@
       "image": "/uploads/event-logos/outlaws-under-lights.jpeg",
       "logo": "/uploads/event-logos/outlaws-under-lights.jpeg",
       "description": "A Flight and B Flight awards for champions and runner-ups. All games start at 6:30 PM. Four-game guarantee weather permitting.",
-      "featured": false
+      "featured": false,
+      "startDate": "2026-06-05",
+      "endDate": "2026-06-06",
+      "directRegister": false
     },
     {
       "title": "Jersey Outlaws Summer Showcase",
@@ -222,7 +273,10 @@
       "image": "/uploads/event-logos/jersey-outlaws-summer-showcase.jpg",
       "logo": "/uploads/event-logos/jersey-outlaws-summer-showcase.jpg",
       "description": "Softball showcase event at Adventure Sports and Entertainment.",
-      "featured": false
+      "featured": false,
+      "startDate": "2026-06-06",
+      "endDate": "2026-06-07",
+      "directRegister": false
     },
     {
       "title": "Ripkin Districts Baseball Tournament",
@@ -234,7 +288,10 @@
       "image": "/uploads/event-logos/ripken-baseball.webp",
       "logo": "/uploads/event-logos/ripken-baseball.webp",
       "description": "Baseball tournament at Adventure Sports and Entertainment.",
-      "featured": false
+      "featured": false,
+      "startDate": "2026-06-08",
+      "endDate": "2026-06-11",
+      "directRegister": false
     },
     {
       "title": "USSSA NJ 12u State Championship",
@@ -246,7 +303,10 @@
       "image": "/uploads/event-logos/usssa-nj-state.png",
       "logo": "/uploads/event-logos/usssa-nj-state.png",
       "description": "Baseball tournament at Adventure Sports and Entertainment.",
-      "featured": false
+      "featured": false,
+      "startDate": "2026-06-12",
+      "endDate": "2026-06-14",
+      "directRegister": false
     },
     {
       "title": "Ripkin Districts Baseball Tournament",
@@ -258,7 +318,10 @@
       "image": "/uploads/event-logos/ripken-baseball.webp",
       "logo": "/uploads/event-logos/ripken-baseball.webp",
       "description": "Baseball tournament at Adventure Sports and Entertainment.",
-      "featured": false
+      "featured": false,
+      "startDate": "2026-06-15",
+      "endDate": "2026-06-18",
+      "directRegister": false
     },
     {
       "title": "USABL Adventure Fathers Day Showdown",
@@ -266,11 +329,14 @@
       "date": "June 19 - June 21, 2026",
       "location": "515 Monmouth Road, Building 210, Jackson, NJ",
       "price": "See registration page",
-      "register": "https://adventuresportsandentertainment.com/event/usabl-adventure-fathers-day-showdown/",
+      "register": "https://play.usabl.com/events/ASfathersday2026",
       "image": "/uploads/site/adventure-logo.png",
       "logo": "/uploads/site/adventure-logo.png",
       "description": "Baseball tournament at Adventure Sports and Entertainment.",
-      "featured": false
+      "featured": false,
+      "startDate": "2026-06-19",
+      "endDate": "2026-06-21",
+      "directRegister": true
     },
     {
       "title": "Ripkin Districts Baseball Tournament",
@@ -282,7 +348,10 @@
       "image": "/uploads/event-logos/ripken-baseball.webp",
       "logo": "/uploads/event-logos/ripken-baseball.webp",
       "description": "Baseball tournament at Adventure Sports and Entertainment.",
-      "featured": false
+      "featured": false,
+      "startDate": "2026-06-22",
+      "endDate": "2026-06-23",
+      "directRegister": false
     },
     {
       "title": "Team NJ Summer Classic",
@@ -294,7 +363,10 @@
       "image": "/uploads/event-logos/team-nj-summer-classic.png",
       "logo": "/uploads/event-logos/team-nj-summer-classic.png",
       "description": "Softball event at Adventure Sports and Entertainment.",
-      "featured": false
+      "featured": false,
+      "startDate": "2026-06-24",
+      "endDate": "2026-06-27",
+      "directRegister": false
     },
     {
       "title": "USABL Adventure Jersey Battle",
@@ -306,7 +378,10 @@
       "image": "/uploads/event-logos/jersey-battle.webp",
       "logo": "/uploads/event-logos/jersey-battle.webp",
       "description": "Baseball tournament at Adventure Sports and Entertainment.",
-      "featured": false
+      "featured": false,
+      "startDate": "2026-06-27",
+      "endDate": "2026-06-28",
+      "directRegister": false
     },
     {
       "title": "Nightmare Fastpitch East Coast IDT",
@@ -318,7 +393,10 @@
       "image": "/uploads/event-logos/adventure-turf-complex.webp",
       "logo": "/uploads/event-logos/adventure-turf-complex.webp",
       "description": "Softball event at Adventure Sports and Entertainment.",
-      "featured": false
+      "featured": false,
+      "startDate": "2026-06-30",
+      "endDate": "2026-07-02",
+      "directRegister": false
     },
     {
       "title": "USSSA Let Freedom Ring",
@@ -330,7 +408,10 @@
       "image": "/uploads/event-logos/let-freedom-ring.png",
       "logo": "/uploads/event-logos/let-freedom-ring.png",
       "description": "Softball tournament at Adventure Sports and Entertainment.",
-      "featured": false
+      "featured": false,
+      "startDate": "2026-07-03",
+      "endDate": "2026-07-05",
+      "directRegister": false
     },
     {
       "title": "Alliance / NEFL Northeast Regional Championship",
@@ -342,7 +423,10 @@
       "image": "/uploads/event-logos/adventure-turf-complex.webp",
       "logo": "/uploads/event-logos/adventure-turf-complex.webp",
       "description": "Softball championship event at Adventure Sports and Entertainment.",
-      "featured": false
+      "featured": false,
+      "startDate": "2026-07-07",
+      "endDate": "2026-07-10",
+      "directRegister": false
     },
     {
       "title": "Adventure USABL Elite World Series Auto Qualifier",
@@ -350,11 +434,14 @@
       "date": "July 10 - July 12, 2026",
       "location": "515 Monmouth Road, Building 210, Jackson, NJ",
       "price": "See registration page",
-      "register": "https://adventuresportsandentertainment.com/event/adventure-usabl-elite-world-series-auto-qualifier/",
+      "register": "https://play.usabl.com/events/USABLEliteWS2026",
       "image": "/uploads/event-logos/usabl-elite-ws-auto.webp",
       "logo": "/uploads/event-logos/usabl-elite-ws-auto.webp",
       "description": "Baseball tournament at Adventure Sports and Entertainment.",
-      "featured": false
+      "featured": false,
+      "startDate": "2026-07-10",
+      "endDate": "2026-07-12",
+      "directRegister": true
     },
     {
       "title": "USSSA Northeast National Chiampionship",
@@ -366,7 +453,10 @@
       "image": "/uploads/event-logos/usssa-northeast-national.png",
       "logo": "/uploads/event-logos/usssa-northeast-national.png",
       "description": "Softball national championship event at Adventure Sports and Entertainment.",
-      "featured": false
+      "featured": false,
+      "startDate": "2026-07-13",
+      "endDate": "2026-07-17",
+      "directRegister": false
     },
     {
       "title": "USABL Adventure Summer Slam",
@@ -378,7 +468,10 @@
       "image": "/uploads/event-logos/adventure-turf-complex.webp",
       "logo": "/uploads/event-logos/adventure-turf-complex.webp",
       "description": "Baseball tournament at Adventure Sports and Entertainment.",
-      "featured": false
+      "featured": false,
+      "startDate": "2026-07-18",
+      "endDate": "2026-07-19",
+      "directRegister": false
     },
     {
       "title": "24th Annual The War at the Shore",
@@ -390,7 +483,10 @@
       "image": "/uploads/event-logos/war-at-the-shore.jpeg",
       "logo": "/uploads/event-logos/war-at-the-shore.jpeg",
       "description": "Teams will play a minimum of 5 games, weather permitting. To sign up, visit jaxxlightningevents.com.",
-      "featured": false
+      "featured": false,
+      "startDate": "2026-07-23",
+      "endDate": "2026-07-26",
+      "directRegister": false
     },
     {
       "title": "USABL Cup *Must Qualify*",
@@ -398,11 +494,14 @@
       "date": "July 28 - July 30, 2026",
       "location": "515 Monmouth Road, Building 210, Jackson, NJ",
       "price": "See registration page",
-      "register": "https://adventuresportsandentertainment.com/event/usabl-cup-must-qualify/",
+      "register": "https://play.usabl.com/events/USABLCupFinals2026",
       "image": "/uploads/event-logos/usabl-cup.webp",
       "logo": "/uploads/event-logos/usabl-cup.webp",
       "description": "Baseball tournament at Adventure Sports and Entertainment.",
-      "featured": false
+      "featured": false,
+      "startDate": "2026-07-28",
+      "endDate": "2026-07-30",
+      "directRegister": true
     },
     {
       "title": "USABL World Series *Must Qualify*",
@@ -410,11 +509,14 @@
       "date": "July 31 - August 3, 2026",
       "location": "515 Monmouth Road, Building 210, Jackson, NJ",
       "price": "See registration page",
-      "register": "https://adventuresportsandentertainment.com/event/usabl-world-series-must-qualify/",
+      "register": "https://play.usabl.com/events/USABLEliteWS2026",
       "image": "/uploads/event-logos/usabl-world-series.webp",
       "logo": "/uploads/event-logos/usabl-world-series.webp",
       "description": "Baseball tournament at Adventure Sports and Entertainment.",
-      "featured": false
+      "featured": false,
+      "startDate": "2026-07-31",
+      "endDate": "2026-08-03",
+      "directRegister": true
     },
     {
       "title": "AAG Softball",
@@ -426,7 +528,10 @@
       "image": "/uploads/event-logos/softball-generic.jpg",
       "logo": "/uploads/event-logos/softball-generic.jpg",
       "description": "Softball event at Adventure Sports and Entertainment.",
-      "featured": false
+      "featured": false,
+      "startDate": "2026-08-08",
+      "endDate": "2026-08-08",
+      "directRegister": false
     },
     {
       "title": "Premier Showcase",
@@ -438,7 +543,10 @@
       "image": "/uploads/event-logos/usabl-cup-finals.webp",
       "logo": "/uploads/event-logos/usabl-cup-finals.webp",
       "description": "Showcase event at Adventure Sports and Entertainment.",
-      "featured": false
+      "featured": false,
+      "startDate": "2026-08-09",
+      "endDate": "2026-08-09",
+      "directRegister": false
     },
     {
       "title": "Premier Showcase",
@@ -450,7 +558,10 @@
       "image": "/uploads/event-logos/usabl-cup-finals.webp",
       "logo": "/uploads/event-logos/usabl-cup-finals.webp",
       "description": "Showcase event at Adventure Sports and Entertainment.",
-      "featured": false
+      "featured": false,
+      "startDate": "2026-08-10",
+      "endDate": "2026-08-10",
+      "directRegister": false
     },
     {
       "title": "Baseball Tournament",
@@ -462,7 +573,10 @@
       "image": "/uploads/event-logos/usabl-cup-finals.webp",
       "logo": "/uploads/event-logos/usabl-cup-finals.webp",
       "description": "Baseball tournament at Adventure Sports and Entertainment.",
-      "featured": false
+      "featured": false,
+      "startDate": "2026-08-14",
+      "endDate": "2026-08-14",
+      "directRegister": false
     },
     {
       "title": "Baseball Tournament",
@@ -474,7 +588,10 @@
       "image": "/uploads/event-logos/usabl-cup-finals.webp",
       "logo": "/uploads/event-logos/usabl-cup-finals.webp",
       "description": "Baseball tournament at Adventure Sports and Entertainment.",
-      "featured": false
+      "featured": false,
+      "startDate": "2026-08-15",
+      "endDate": "2026-08-15",
+      "directRegister": false
     },
     {
       "title": "Baseball Tournament",
@@ -486,7 +603,10 @@
       "image": "/uploads/event-logos/usabl-cup-finals.webp",
       "logo": "/uploads/event-logos/usabl-cup-finals.webp",
       "description": "Baseball tournament at Adventure Sports and Entertainment.",
-      "featured": false
+      "featured": false,
+      "startDate": "2026-08-16",
+      "endDate": "2026-08-16",
+      "directRegister": false
     },
     {
       "title": "Island Elite Summer Smash",
@@ -498,7 +618,10 @@
       "image": "/uploads/event-logos/flag-football.jpg",
       "logo": "/uploads/event-logos/flag-football.jpg",
       "description": "Flag football event at Adventure Sports and Entertainment.",
-      "featured": false
+      "featured": false,
+      "startDate": "2026-08-22",
+      "endDate": "2026-08-22",
+      "directRegister": false
     },
     {
       "title": "PGF Labor Day Weekend Tournament",
@@ -510,7 +633,10 @@
       "image": "/uploads/event-logos/pgf-qualifier.jpg",
       "logo": "/uploads/event-logos/pgf-qualifier.jpg",
       "description": "Softball tournament at Adventure Sports and Entertainment.",
-      "featured": false
+      "featured": false,
+      "startDate": "2026-08-28",
+      "endDate": "2026-08-31",
+      "directRegister": false
     },
     {
       "title": "Adventure\u2019s Back to School Softball Series",
@@ -522,7 +648,10 @@
       "image": "/uploads/event-logos/adventure-turf-complex.webp",
       "logo": "/uploads/event-logos/adventure-turf-complex.webp",
       "description": "Softball tournament at Adventure Sports and Entertainment.",
-      "featured": false
+      "featured": false,
+      "startDate": "2026-09-05",
+      "endDate": "2026-09-06",
+      "directRegister": false
     },
     {
       "title": "USABL Baseball Tournament",
@@ -534,7 +663,10 @@
       "image": "/uploads/event-logos/adventure-turf-complex.webp",
       "logo": "/uploads/event-logos/adventure-turf-complex.webp",
       "description": "Baseball tournament at Adventure Sports and Entertainment.",
-      "featured": false
+      "featured": false,
+      "startDate": "2026-09-11",
+      "endDate": "2026-09-13",
+      "directRegister": false
     },
     {
       "title": "Nightmare Fastpitch College Play Weekend",
@@ -546,7 +678,10 @@
       "image": "/uploads/event-logos/nightmare-fastpitch.webp",
       "logo": "/uploads/event-logos/nightmare-fastpitch.webp",
       "description": "Softball event at Adventure Sports and Entertainment.",
-      "featured": false
+      "featured": false,
+      "startDate": "2026-09-18",
+      "endDate": "2026-09-20",
+      "directRegister": false
     },
     {
       "title": "USABL Baseball Tournament",
@@ -558,7 +693,10 @@
       "image": "/uploads/event-logos/adventure-turf-complex.webp",
       "logo": "/uploads/event-logos/adventure-turf-complex.webp",
       "description": "Baseball tournament at Adventure Sports and Entertainment.",
-      "featured": false
+      "featured": false,
+      "startDate": "2026-09-25",
+      "endDate": "2026-09-27",
+      "directRegister": false
     },
     {
       "title": "Jersey Outlaws Fall Showcase",
@@ -570,7 +708,10 @@
       "image": "/uploads/event-logos/adventure-turf-complex.webp",
       "logo": "/uploads/event-logos/adventure-turf-complex.webp",
       "description": "Softball showcase event at Adventure Sports and Entertainment.",
-      "featured": false
+      "featured": false,
+      "startDate": "2026-10-02",
+      "endDate": "2026-10-04",
+      "directRegister": false
     },
     {
       "title": "PGF Show Me the Money Softball Tournament",
@@ -582,7 +723,10 @@
       "image": "/uploads/event-logos/pgf-qualifier.jpg",
       "logo": "/uploads/event-logos/pgf-qualifier.jpg",
       "description": "Softball tournament at Adventure Sports and Entertainment.",
-      "featured": false
+      "featured": false,
+      "startDate": "2026-10-09",
+      "endDate": "2026-10-11",
+      "directRegister": false
     },
     {
       "title": "Team NJ Fall College Showcase",
@@ -594,7 +738,10 @@
       "image": "/uploads/event-logos/adventure-turf-complex.webp",
       "logo": "/uploads/event-logos/adventure-turf-complex.webp",
       "description": "Softball showcase event at Adventure Sports and Entertainment.",
-      "featured": false
+      "featured": false,
+      "startDate": "2026-10-16",
+      "endDate": "2026-10-18",
+      "directRegister": false
     },
     {
       "title": "Adventure\u2019s Annual Halloween Bash",
@@ -606,7 +753,10 @@
       "image": "/uploads/event-logos/adventure-turf-complex.webp",
       "logo": "/uploads/event-logos/adventure-turf-complex.webp",
       "description": "Softball tournament at Adventure Sports and Entertainment.",
-      "featured": false
+      "featured": false,
+      "startDate": "2026-10-23",
+      "endDate": "2026-10-25",
+      "directRegister": false
     },
     {
       "title": "USABL Baseball Tournament",
@@ -618,7 +768,10 @@
       "image": "/uploads/event-logos/adventure-turf-complex.webp",
       "logo": "/uploads/event-logos/adventure-turf-complex.webp",
       "description": "Baseball tournament at Adventure Sports and Entertainment.",
-      "featured": false
+      "featured": false,
+      "startDate": "2026-10-30",
+      "endDate": "2026-11-01",
+      "directRegister": false
     },
     {
       "title": "Nightmare Fastpitch Power 12 College Showcase",
@@ -630,7 +783,10 @@
       "image": "/uploads/event-logos/adventure-turf-complex.webp",
       "logo": "/uploads/event-logos/adventure-turf-complex.webp",
       "description": "Softball showcase event at Adventure Sports and Entertainment.",
-      "featured": false
+      "featured": false,
+      "startDate": "2026-11-06",
+      "endDate": "2026-11-08",
+      "directRegister": false
     },
     {
       "title": "Adventure\u2019s Northeast Championship",
@@ -642,7 +798,10 @@
       "image": "/uploads/event-logos/adventure-turf-complex.webp",
       "logo": "/uploads/event-logos/adventure-turf-complex.webp",
       "description": "Softball tournament at Adventure Sports and Entertainment.",
-      "featured": false
+      "featured": false,
+      "startDate": "2026-11-13",
+      "endDate": "2026-11-15",
+      "directRegister": false
     }
   ]
 }
